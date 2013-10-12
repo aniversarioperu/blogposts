@@ -1,0 +1,137 @@
+<img alt="" src="https://pbs.twimg.com/media/BQSP19UCUAAoMsg.png:small" />
+
+https://twitter.com/uterope/status/361572027246727168/photo/1
+
+Según lo que pude leer en twitter el mensaje a la nación de Ollanta Humala este año estuvo algo aburrido. Pero<strong> lo mejor del discurso fue que duró la mitad que el del año pasado!</strong>
+
+Luego de ver las nubes de palabras del mensaje de este año y ver al algunos opinar que este mensaje <a href="http://www.larepublica.pe/columnistas/claro-y-directo/mensaje-2013-deja-vu-2012-29-07-2013">se parece mucho al del año pasado</a> decidí hacer un rápido y rudimentario análisis de los discursos presidenciales del 2013 y 2012.
+<h2>Estadísticas básicas</h2>
+La cuenta de <a href="http://www.scribd.com/PresidenciadelPeru">Scrib de PresidenciadelPeru</a> tiene colagos los dos discursos. Bajé los archivos en formato PDF y los convertí a texto y averigué unas estadísticas básicas:
+
+[code language="bash"]
+# convertir los archivos PDF a texto
+pdftotext 101360576-Spr-28-de-Julio-2012.pdf       mensaje2012.txt
+pdftotext 156579151-Mensaje-Presidencial-2013.pdf  mensaje2013.txt
+
+# Cuantas líneas y palabras de texto tiene cada discurso?
+wc -l mensaje2012.txt
+1262 mensaje2012.txt
+
+wc -w mensaje2012.txt
+11989 mensaje2012.txt
+
+wc -l mensaje2013.txt
+690 mensaje2013.txt
+
+wc -w mensaje2013.txt
+6558 mensaje2013.txt
+[/code]
+
+Vemos que <b>el mensaje del 2013 tiene aproximandamente la mitad del número de lineas de texto que el 2012 (54.67%) y la mitad de palabras (54.70%)</b>. Este mensaje duró la mitad del tiempo que en el 2012 (63 minutos versus 2 horas). Entonces los ayayeros que aplaudían y gritaban en el congreso y no dejaban escuchar el discurso debieron haber interrumpido el mismo número de minutos que el año pasado. Ya que <b>al parecer no tuvieron efecto significativo en la duración del discurso</b>. Al contrario parece que este año Ollanta Humala pudo leer su discurso más rápido (a paso ligero).
+
+Pero este año parece haber habido más quejas por los ayayeros. Debe ser una consecuencia de la baja desaprobación del presidente.
+<h2>Frecuencia de palabras usadas en los mensajes</h2>
+Las nubes de palabras son muy buenas para tener una idea de las palabras que han sido más usadas durante los discursos. Pero me da curiosidad tener los números <i>duros</i> de las palabras que más se usaron en el discurso.
+
+Para ver las frecuencias de palabras tuve que hacer varias manipulaciones al texto para hacer una "limpieza" superficial de los archivos de texto y poder trabajarlo:
+
+[code language="bash"]
+# Eliminar signos de puntuación usando el comando tr
+tr -d [:punct:] < mensaje2012.txt > mensaje2012_nopunct.txt
+tr -d [:punct:] < mensaje2013.txt > mensaje2013_nopunct.txt
+
+# Convertir todas las mayúsculas a minúsculas
+tr [:upper:] [:lower:] < mensaje2012_nopunct.txt > mensaje2012_lower.txt
+tr [:upper:] [:lower:] < mensaje2013_nopunct.txt > mensaje2013_lower.txt
+
+# Convertir todo el texto a una lista de palabras
+tr ' ' '\n' < mensaje2012_lower.txt > mensaje2012_oneword.txt
+tr ' ' '\n' < mensaje2013_lower.txt > mensaje2013_oneword.txt
+[/code]
+
+Lo que nos da archivos conteniendo todo el discurso convertido a una lista de palabras:
+<pre>mensaje
+a
+la
+nación
+del
+señor
+presidente
+ollanta
+humala
+con
+...</pre>
+Podemos ver cuantas veces se usaron cada una de las palabras en cada uno de los mensajes a la nación.
+
+Para el mensaje del 2012:
+
+[code language="bash" light="true"]
+cat mensaje2012_oneword.txt | sort | uniq -c | sort -h
+[/code]
+
+<b>40 millones</b>
+41 estamos
+44 ha
+49 país
+50 gobierno
+52 estado
+54 como
+56 es
+57 año
+63 hemos
+69 este
+70 por
+71 más
+85
+86 una
+90 al
+105 un
+110 se
+134 con
+143 las
+191 del
+191 los
+212 para
+249 que
+283 a
+381 el
+390 en
+424 y
+491 la
+914 de
+
+Las palabras comunes no nos interesan (<i>de, la</i>) pero vemos que se usó la palabra <b><i>millones</i></b> 40 veces.
+
+Podemos averiguar cuántas veces se usó la palabra <b><i>millones</i></b> en el discurso del 2013:
+
+[code language="bash"]
+cat mensaje2013_oneword.txt | sort | uniq -c | grep millones
+    43 millones
+[/code]
+
+Ollanta Humala <strong>mencionó la palabra <i>millones</i> 43 veces</strong>! Tres veces más que el año pasado. Pero este discurso fue 54% más corto! Si este mensaje hubiera sido de la misma longitud que el del año pasado, el presidente<strong> habría mencionado <i>millones</i> 86 veces</strong>? El doble que el año pasado. <strong>Este año ha sido una verdadera lluvia de millones</strong>. Lo cual puede preocupar porque como dice el conocido refrán <strong><i>dime de que presumes y te dire de qué careces</i></strong>.
+
+Algo parecido pasa si vemos la frecuencia de la palabra <strong><i>seguridad</i></strong>:
+
+En el 2012:
+
+[code language="bash" light="true"]
+cat mensaje2012_oneword.txt | sort | uniq -c | sort -h | grep seguridad
+[/code]
+
+1 <span style="color:#ff0000;">seguridad</span>es
+3 in<span style="color:#ff0000;">seguridad</span>
+<span style="color:#ff0000;">15 </span><span style="color:#ff0000;">seguridad </span>
+
+En el 2013:
+
+[code language="bash" light="true"]
+cat mensaje2013_oneword.txt | sort | uniq -c | sort -h | grep seguridad
+[/code]
+
+2 in<span style="color:#ff0000;">seguridad</span>
+13 <span style="color:#ff0000;">seguridad </span>
+
+Si hacemos el ajuste por tamaño de discurso, <strong>este año el presidente mencionó la palabra <i>seguridad</i> casi el doble de veces que el año pasado</strong>.
+
+<strong><i>dime de que presumes y te dire de qué careces</i></strong>

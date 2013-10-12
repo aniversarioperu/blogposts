@@ -1,0 +1,176 @@
+<img alt="" src="https://pbs.twimg.com/media/BO-b4iOCUAA1xWT.jpg:large" /> https://twitter.com/otravezandres/status/355674291142021120/photo/1
+
+En posts anteriores describí un método para averiguar en qué fecha del segundo gobierno de Alan García se había dado indultos y conmutaciones de penas a personajes que habían reincidido en el delito. Podemos construir un <i>bot</i> en twitter para que tuitee recordatorios el día que fueron indultados/conmutados de pena cada uno de estos angelitos. El tuit podría tener la siguiente estructura:
+<pre>Como hoy (24 Jul 2009) indulté a Fulano Mengano, pero luego fue encarcelado por ESTE DELITO</pre>
+Luego de <a href="http://aniversarioperu.wordpress.com/2013/07/18/usando-herramientas-de-linux-con-los-narcoindultos/">usar herramientas de Linux</a> para <a href="http://aniversarioperu.wordpress.com/2013/07/20/los-narcoindultados-con-fecha-de-indulto-usando-linux/">buscar nombres de la lista de reincidentes en todas las normas jurídicas</a> emitidas por el Ministerio de Justica, habíamos obtenido una lista de 138 coincidencias:
+<pre>02-07-09.txt:8. ABATE LUCIANO, LUCIO, conmutarle de 05 años 06 meses a 03 años 07 meses de
+14-01-09.txt:56. AGUILAR TALAVERANO, JUAN CARLOS o AGUILA TALAVERANO, JUAN CARLOS,
+12-05-09.txt:18. ALARCON MORA, MIGUEL ANGEL, conmutarle de 08 años a 06 años 08 meses de
+28-01-10.txt:43. AGUIRRE ANGELES, ELVIS EDWIN, conmutarle de 04 años a 02 años de pena
+27-02-09.txt:6. AGUIRRE ANGULO, OMAR WILLIAMS, conmutarle de 07 años a 04 años 04 meses
+30-04-09.txt:7. ALCARRAZ CAMPOS, ABRAHAM, conmutarle de 05 años a 03 años 08 meses de
+17-04-10.txt:13. ALMEYDA LEON, CESAR ARTURO, conmutarle de 05 años a 03 años de pena
+17-06-09.txt:45. AMPARADO AMPARADO, ROLANDO WALTER o PAJARITO AMPARADO,
+29-01-10.txt:18. ALVAREZ RENGIFO, LUIS ALFONSO, conmutarle de 10 años a 04 años 06
+16-12-08.txt:61. ANDAVIZA CHILET, NILDA KARINA, conmutarle de 13 años a 10 años 10 meses de
+...</pre>
+Usando un comando de Linux podemos convertir esa lista, en un formato que sea más manejable:.
+
+[code language="bash" light="true"]
+sed -i 's/\(.\+\)\.txt:[0-9]*\.*\s\([A-Z]\+\s[A-Z]\+,\s[A-Z]\+\).\+/\1 \2/g' coincidencias.txt
+[/code]
+
+Lo que resulta en:
+<pre>02-07-09 ABATE LUCIANO, LUCIO
+14-01-09 AGUILAR TALAVERANO, JUAN
+12-05-09 ALARCON MORA, MIGUEL
+28-01-10 AGUIRRE ANGELES, ELVIS
+27-02-09 AGUIRRE ANGULO, OMAR
+30-04-09 ALCARRAZ CAMPOS, ABRAHAM
+17-04-10 ALMEYDA LEON, CESAR
+17-06-09 AMPARADO AMPARADO, ROLANDO
+29-01-10 ALVAREZ RENGIFO, LUIS
+16-12-08 ANDAVIZA CHILET, NILDA
+...</pre>
+Este comando convierte la fecha en formato internacional YYY-MM-DD y agrega algo de texto:
+
+[code language="bash" light="true"]
+cat coincidencias.txt | awk -F ' ' '{print $1 " | " $2 " " $3 " " $4 " es indultado por Alan García, reincide en el delito poco despues | " $1}' | sed 's/^\([0-9]\{2\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)/20\3-\2-\1/g' > tmp.txt
+[/code]
+
+Lo que produce:
+<pre>2009-07-02 | ABATE LUCIANO, LUCIO es indultado por Alan García, reincide en el delito poco después | 02-07-09
+2009-01-14 | AGUILAR TALAVERANO, JUAN es indultado por Alan García, reincide en el delito poco después | 14-01-09
+2009-05-12 | ALARCON MORA, MIGUEL es indultado por Alan García, reincide en el delito poco después | 12-05-09
+2010-01-28 | AGUIRRE ANGELES, ELVIS es indultado por Alan García, reincide en el delito poco después | 28-01-10
+2009-02-27 | AGUIRRE ANGULO, OMAR es indultado por Alan García, reincide en el delito poco después | 27-02-09
+2009-04-30 | ALCARRAZ CAMPOS, ABRAHAM es indultado por Alan García, reincide en el delito poco después | 30-04-09
+2010-04-17 | ALMEYDA LEON, CESAR es indultado por Alan García, reincide en el delito poco después | 17-04-10
+2009-06-17 | AMPARADO AMPARADO, ROLANDO es indultado por Alan García, reincide en el delito poco después | 17-06-09
+2010-01-29 | ALVAREZ RENGIFO, LUIS es indultado por Alan García, reincide en el delito poco después | 29-01-10
+2008-12-16 | ANDAVIZA CHILET, NILDA es indultado por Alan García, reincide en el delito poco después | 16-12-08</pre>
+Hay que convertir la fecha que aparece al final de cada línea a un link hacia la norma del Ministerio de Justicia correspondiente:
+
+[code language="bash" light="true"]
+cat tmp.txt | sed -r 's/([0-9]{2})-([0-9]{2})-([0-9]{2})$/http:\/\/spij.minjus.gob.pe\/Normas\/textos\/\1\2\3T\.pdf/g' > coincidencias.txt
+[/code]
+
+Y ya tenemos listos nuestros tuis:
+<pre>2009-07-02 | ABATE LUCIANO, LUCIO es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/020709T.pdf
+2009-01-14 | AGUILAR TALAVERANO, JUAN es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/140109T.pdf
+2009-05-12 | ALARCON MORA, MIGUEL es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/120509T.pdf
+2010-01-28 | AGUIRRE ANGELES, ELVIS es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/280110T.pdf
+2009-02-27 | AGUIRRE ANGULO, OMAR es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/270209T.pdf
+2009-04-30 | ALCARRAZ CAMPOS, ABRAHAM es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/300409T.pdf
+2010-04-17 | ALMEYDA LEON, CESAR es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/170410T.pdf
+2009-06-17 | AMPARADO AMPARADO, ROLANDO es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/170609T.pdf
+2010-01-29 | ALVAREZ RENGIFO, LUIS es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/290110T.pdf
+2008-12-16 | ANDAVIZA CHILET, NILDA es indultado por Alan García, reincide en el delito poco después | http://spij.minjus.gob.pe/Normas/textos/161208T.pdf
+...</pre>
+<h3>Ahora necesitamos crear un tuitbot</h3>
+Necesitamos crear una cuenta en twitter, y una cuenta en bit.ly para que convierta los links a una versión corta. Instalamos el programa llamado <b>t</b> que puede tuitear desde la línea de comandos de Linux (<a href="https://github.com/sferik/t">lo descargan de aquí</a> y sigan las intrucciones). Luego de autenticar el programa <b>t</b> podemos hacer un tuit con el siguiente comando:
+
+[code language="bash" light="true"]
+t update "Este es mi primer tuit"
+[/code]
+
+Ahora necesitamos un script que vaya línea por línea de nuestro archivo <code>coincidencias.txt</code> y compare la fecha actual con la fecha en que se emitieron los indultos/conmutaciones. Si las fechas coinciden en mes y dia, se emite el tuit. Escribí ese script usando el lenguage <a class="zem_slink" title="Python (programming language)" href="http://en.wikipedia.org/wiki/Python_%28programming_language%29" target="_blank" rel="wikipedia">Python</a> y aquí está:
+
+Archivo <code>tuit.py</code>:
+
+[code language="python"]
+#!/usr/bin/env python
+# -*- coding: UTF8 -*-
+import codecs;
+import os;
+import datetime;
+import re;
+import bitly;
+import subprocess;
+import time;
+
+# This script will look for an event matching today's date and will tuit it
+# using https://github.com/sferik/t twitter's client
+
+# t update "mi primer tuit"
+
+# api details for bitly
+API_USERNAME = 'Usar tu propio username'
+API_KEY      = 'Usar tu propia api_key para bitly'
+
+# get current date mm-dd
+today = str(datetime.date.today());
+today = re.sub("^[0-9]{4}-", "", today);
+
+# create a log file
+file_log = open("log.txt", "a");
+
+# read data
+file = "coincidencias.txt";
+data_file = codecs.open(file, "r", encoding="utf-8");
+
+def format_date(date):
+    date = date.strip()
+    d = datetime.datetime.strptime(date, "%Y-%m-%d")
+    try:
+        return d.strftime("%d de %b %Y");
+    except:
+        date = date.split("-");
+        if date[1] == "07":
+            month = "Jul";
+        return re.sub("^0", "", date[2]) + " de " + month + " " + date[0]
+
+tuits = []
+
+# process data
+for line in data_file:
+    line = line.split("|");
+    # date as mm-dd
+    date = re.sub("^[0-9]{4}-", "", line[0].strip())
+    if date == today:
+        event = line[1].strip()
+
+        link = line[2].strip();
+        shortUrl = bitly.Api(login=API_USERNAME, apikey=API_KEY).shorten(link)
+
+        formatted_date = format_date(line[0]);
+        f.write(formatted_date + "\n")
+
+        tuit = formatted_date + ": " + event + " " + shortUrl;
+
+        cmd = '/usr/local/bin/t update "' + tuit + '"';
+        tuits.append(cmd)
+
+# count number of tuits for today
+n_tuits = len(tuits)
+if n_tuits > 0:
+    timeToSleep = 6.0*60*60/n_tuits
+else:
+    timeToSleep = 1;
+
+print "N tuits: " + str(n_tuits)
+file_log.write("N tuits: " + str(n_tuits) + "\n");
+
+print "Time to sleep between tuits: " + str(timeToSleep)
+file_log.write("Time to sleep between tuits: " + str(timeToSleep) + "\n");
+
+for cmd in tuits:
+    p = subprocess.check_call(cmd, shell=True);
+
+    if p == 0:
+        # sleep for some time within 6 hour shift
+        time.sleep(timeToSleep)
+
+data_file.close();
+file_log.close();
+[/code]
+
+Si hay varios tuits para tuitear por día, este script esperará unas horas entre cada tuit. Para no tener que correr el programa manualmente todos los días podemos utilizar un <code>cronjob</code> para que se ejecute automaticamente todos los días. Aprovechando que la computadora de mi oficia está siempre prendida, puedo crear un <code>cronjob</code>:
+
+[code language="bash"]
+crontab -l
+00 08 * * * python tuit.py
+[/code]
+
+En este caso el script se ejecutará automáticamente todos los días a las 8:00 am y emitirá tuits parecidos a este:
+<pre>24 de Jul 2011: URSULA VELASQUEZ, PAREJA es indultada por Alan García, reincide en el delito poco después bit.ly/142iKgw</pre>

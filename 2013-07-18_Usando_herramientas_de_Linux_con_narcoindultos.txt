@@ -1,0 +1,88 @@
+[caption id="" align="left" width="150"]<a href="http://commons.wikipedia.org/wiki/File:Alan_Garc%C3%ADa_P%C3%A9rez.JPG" target="_blank"><img class="zemanta-img-inserted zemanta-img-configured" title="Alan García Pérez" alt="Alan García Pérez" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Alan_Garc%C3%ADa_P%C3%A9rez.JPG/300px-Alan_Garc%C3%ADa_P%C3%A9rez.JPG" width="300" height="225" /></a> Alan García Pérez (Photo credit: Wikipedia)[/caption]
+
+El tuit de Beneficios Solís me dio una idea:
+
+https://twitter.com/bensolis/status/355176156233871360
+
+Creo que las herramientas de Linux pueden ser de mucha ayuda para "parsear" información presente en documentos PDF y texto para obtener información de importancia periodística.
+
+Miremos la información que se puede obtener en el caso de los #narcoindultos durante el segundo gobierno de Alan García.
+
+El periodista Martín Hidalgo ha colgado documentos en su <a href="http://www.scribd.com/mart%C3%ADn_hidalgo_20">cuenta de Scribd</a> conteniendo la lista de indultados por Alan García (segundo gobierno) que habían reincidido y otra vez estaban siendo procesados por diversos delitos.
+
+Este es uno de los archivos:
+
+[scribd id=134324226 key=key-27stuguvggg6tmxa1sue mode=scroll]
+
+Bajé los 5 documentos que eran imagénes escaneadas que habían sido convertidas a PDF. Es mejor tener la información en texto par que pueda ser trabajado. Entonces había que convertir el PDF -&gt; en imagen -&gt; a texto.
+
+Existen varias herramientas en linux s que pueden ayudar con esto: todos los comandos son ejecutados desde la consola debcomandos o terminal:
+
+[code language="bash"]
+# extraer la imagen desde el PDF
+pdfimages DOC2.pdf doc2
+[/code]
+
+Con lo que obtuve el archivo de imagen doc2-000.ppm
+
+Para convertir la imagen a texto podemos usar la herramienta <a href="http://es.wikipedia.org/wiki/Reconocimiento_%C3%B3ptico_de_caracteres">OCR</a> llamada tesseract:
+
+[code language="bash"]
+# convertir imagen a texto
+tesseract doc2-000.ppm doc2 -l spa# eliminar líneas en blanco
+sed -i '/^\s*$/d' doc2.txt
+[/code]
+
+Obtuve el archivo de texto <code>doc2.txt</code> conteniendo todos los nombres. Luego de corregir algunas pequeñas fallas, y ordenar la lista de tal manera que quede un nombre por línea era cuestión de comparar esta lista con los decretos presidenciales para averiguar en qué fecha les fue otorgado us narcoindultos.
+
+La web del min de justicia tiene colgados pdfs de todas sus normas, incluyendo los narcoindultos. Usando google encontré que estos archivos están ordenados por fecha con un formato masomenos consistente:
+
+Por ejemplo, para el 4 de Mayo del 2010 el archivo correspondiente es está en esta dirección <code>http://spij.minjus.gob.pe/Normas/textos/040510T.pdf</code>
+
+Para bajar los PDFs en grupo escribí una dirección web por línea usando un editor de texto cualquiera:
+
+<ul>
+	<li>http://spij.minjus.gob.pe/Normas/textos/030510T.pdf</li>
+
+	<li>http://spij.minjus.gob.pe/Normas/textos/040510T.pdf</li>
+
+	<li>http://spij.minjus.gob.pe/Normas/textos/050510T.pdf</li>
+
+</ul>
+
+Grabé el archivo con el nombre <code>list.txt</code> y usé el comando de Linux <code>wget</code> para bajar todos los archivos de la lista:
+
+[code language="bash" light="true"]
+wget -i list.txt
+[/code]
+
+Luego de ejecutarse la descarga obtuve estos archivos:
+<pre>-rw-rw-r-- 1 289847 Oct 15  2010 050510T.pdf
+-rw-rw-r-- 1 257893 Oct 15  2010 040510T.pdf
+-rw-rw-r-- 1 112326 Oct 15  2010 030510T.pdf</pre>
+No es necesario usar OCR para convertir estos PDFs a texto:
+
+[code language="bash"]
+pdftotext 030510T.pdf
+pdftotext 040510T.pdf
+pdftotext 050510T.pdf
+[/code]
+
+Con lo que obtuve los archivos en texto con la extensión cambiada a <code>.txt</code>
+
+Luego es cuestion de hacer un simple "crossover" de la lista de indultados que han reincidido versus los archivos de texto conteniendo las normas del Ministerio de Justicia:
+
+[code language="bash" light="true"]
+cat doc2.txt | awk '{print $1 " " $2 ", " $3}' | while read APELLIDOS; do grep "${APELLIDOS}" *.txt ; done
+[/code]
+
+Ese comando se asegura que los nombres de los indultados estén en el formato usado por el minjus (Apellido Paterno Apellido Materno "coma" Primer Nombre). Luego hace una búsqueda de cada nombre en todos los archivos .TXT que tenemos en el actual directorio.
+<pre><span style="color:purple;">040510T.txt:</span>62. <span style="color:red;"><b>JARAMILLO BRIGIDO, CLINIA</b></span>, conmutarle de 08 años a 07 años 10 meses de
+<span style="color:purple;">040510T.txt:</span>6. <span style="color:red;"><b>VELA TAMANI, ALEX</b></span>, conmutarle de 04 años a 02 años 06 meses de pena</pre>
+Bingo!
+
+Hay dos coincidencias:
+
+Si revisamos el archivo con la lista de indultados (<code>doc2.txt</code>) vemos que <b>JARAMILLO BRIGIDO, CLINIA</b> ha vuelto a ser procesada por el delito de <b>tráfico ilícito de drogas</b>. Es este un <b>narcoindulto?</b>
+
+Imagínese lo que podríamos encontrar si bajamos TODAS las normas emitidas por el minjus durante el período 2006-2011 y buscar cuandó es que fueron indultados estos angelitos. Podríamos hacer un tuit ese día recordando que se le dio la gracia presidencial a alguien que talvez no lo necesitaba y bajo muy sospechosas circunstancias (tomando en cuenta todo lo que sabemos acerca de los posibles pagos bajo la mesa).

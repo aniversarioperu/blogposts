@@ -1,0 +1,79 @@
+Estuve pensando en alguna manera de visualizar el patrón de voto de nuestros congresistas en base a las más recientes (y polémicas) votaciones, <a href="http://aniversarioperu.wordpress.com/2013/07/17/cuales-de-tus-congresistas-vota-en-contra-de-gays/">en contra de los gays</a> y a favor de escoger miembros del Tribunal Constitucional en base a una vil #repartija.
+
+Me bajé la lista de congresistas de la web del congreso <a href="http://www.congreso.gob.pe/organizacion/pleno.asp?mode=Pleno">http://www.congreso.gob.pe/organizacion/pleno.asp?mode=Pleno</a> y realicé una edición de la lista para considerar Apellido Paterno Apellido Materno y Primer Nombre para cada uno. Los espacios fueron reemplazados con subguión.
+
+Algo así:
+<pre>Abugattás_Majluf_Daniel
+Acha_Romaní_Walter
+Acuña_Núñez_Richard
+Acuña_Peralta_Virgilio
+Aguinaga_Recuenco_Alejandro
+Alcorta_Suero_María
+Andrade_Carmona_Fernando
+Angulo_Álvarez_Roberto
+Anicama_Ñañez_Elsa
+Apaza_Condori_Emiliano
+Apaza_Ordóñez_Justiniano</pre>
+Podemos convertir la votaciones de cada congresista a modo binario. El voto a favor de una buena propuesta se puede codificar con 1 (<strong>a favor</strong> de incluir orientación sexual en la lista de crímines de odio; <strong>en contra</strong> de elegir a Cayo Galindo, Víctor Mayorga, Rolando Sousa, Francisco Eguiguren, José Luis Sardón y Ernesto Blume como magistrados del Tribunal Constitucional). Se puede codificar con 0 los que votan a favor de malas propuestas. Los ausentes por licencia, ausentes y abtenciones se pueden codificar con signo de interrogación "?").
+
+Además modifiqué el archivo para que esté en formato NEXUS y pueda ser leído por el programa filogenético llamado <a class="zem_slink" title="PAUP" href="http://en.wikipedia.org/wiki/PAUP" target="_blank" rel="wikipedia">PAUP</a>.
+
+Algo así:
+<pre>#NEXUS
+
+BEGIN DATA;
+DIMENSIONS NTAX=130 NCHAR=2;
+FORMAT DATATYPE=STANDARD MISSING=? GAP=-;
+MATRIX
+
+Abugattás_Majluf_Daniel           ??
+Acha_Romaní_Walter                ?0
+Acuña_Núñez_Richard               10
+Acuña_Peralta_Virgilio            1?
+Aguinaga_Recuenco_Alejandro       00
+Alcorta_Suero_María               00
+Andrade_Carmona_Fernando          00
+Angulo_Álvarez_Roberto            00
+Anicama_Ñañez_Elsa                ?0
+Apaza_Condori_Emiliano            00
+Apaza_Ordóñez_Justiniano          00</pre>
+El archivo completo <a href="http://pastebin.com/raw.php?i=c3qu0Sii">está aquí</a>.
+
+Ingresé a PAUP, leí el archivo y pedí que ejecute el algoritmo conocido como <a class="zem_slink" title="Neighbor joining" href="http://en.wikipedia.org/wiki/Neighbor_joining" target="_blank" rel="wikipedia">Neighbor-joining</a> que consiste en agrupar en un dendrograma los congresistas que se parezcan más según los votos que hayan emitido (favor, contra) o hayan estado ausentes.
+<pre># Entrar a PAUP y leer el archivo de datos
+paup&gt; execute congresistas.txt
+
+# Ejecutar el algoritmo Neighbor-joining
+paup&gt; nj;
+
+# Guardar el dendograma en directorio actual
+paup&gt; savetree file=congresistas.tre format=altnexus;</pre>
+Guardé el dendograma en un archivo aparte para dibujar el dendrograma usando el paquete estadístico <a href="http://en.wikipedia.org/wiki/R_(programming_language)">R</a> y la librería <a href="http://cran.r-project.org/web/packages/ape/">APE</a>. El dendrograma se guarda en un archivo PDF:
+
+[code language="r"]
+library(ape);
+x <- read.nexus("congresistas.tre");
+pdf(file="congresistas_cluster.pdf", paper="a4", width=11);
+plot(x, cex=0.22);
+dev.off();
+[/code]
+
+Bájate el archivo resultante <a href="http://aniversarioperu.files.wordpress.com/2013/07/congresistas_cluster.pdf">congresistas_cluster.pdf</a> si deseas.
+
+También se puede convertir el PDF a imagen y colorear los grupos de congresistas. Por ejemplo podemos <strong>colorear de verde el grupo de congresistas "buenos"</strong> (los que han votado a favor de gays y se abstuvieron de votar por los miembros del TC).
+
+Es interesante comparar mi lista de congresistas "buenos" con aquellos de la "Lista de honor" compilada por el <a href="http://www.scribd.com/comunicadociudadano">usuario de Scribd <strong>comunicadociudadano</strong></a> como resultado de un crossover de los congresistas que votaron en contra de los gays y favor de la #repartija.
+
+Mi lista de congresistas "buenos" es más liberal ya que, por ejemplo, da el beneficio de la duda a la congresista fujimorista <a class="zem_slink" title="Leyla Chihuán" href="http://en.wikipedia.org/wiki/Leyla_Chihu%C3%A1n" target="_blank" rel="wikipedia">Leyla Chihuán</a> que no votó por magistrados del TC porque se encontraba de licencia.
+
+He coloreado de amarillo los congresistas "masomenos" que votaron "bien" en al menos una de las votaciones. Por ejemplo el congresista Sergio Tejada votó a favor de los gays pero votó a favor de elegir a los miembros del TC. Muchos están decepcionados de Tejada, pero por ahora no está tan mal (estaremos vigilando).
+
+<strong>El resto de congesistas son "malos"</strong> porque votaron "mal" en las dos ocasiones o se abstuvieron de votar debido a ausencias, licencias y/o abstenciones voluntarias.
+
+[caption id="attachment_41" align="alignnone" width="254"]<a href="http://aniversarioperu.files.wordpress.com/2013/07/congresistas_cluster.jpg"><img class="size-medium wp-image-41" alt="dendrograma de congresistas" src="http://aniversarioperu.files.wordpress.com/2013/07/congresistas_cluster.jpg?w=254" width="254" height="300" /></a> Dendrograma de congresistas. Hacer click para agrandar.[/caption]
+
+Sería intersante agregar los resultados de votaciones adicionales para tener más columnas, más datos y ver si salen patrones más interesantes. Por ejemplo podríamos identificar al "congresista más bueno" (aquel que vota "bien" en todas las ocasiones) así como al "congresista más malo" (aquél que siempre vota "mal").
+
+El <a href="http://larepublica.pe/blogs/pasado/category/big-data/">"big data"</a> que nos hablaba el amigo <a href="http://twitter.com/uterope">útero.pe</a>
+
+Podríamos tener esta lista y dendrograma actualizados antes de las elecciones del 2016, para que eligas mejor a tus congresistas, sí tú, amigo lector.

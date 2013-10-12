@@ -1,0 +1,232 @@
+<blockquote>Aurelio Pastor no fue el ministro que firmó más conmutaciones, pero fue quien las firmó a una mayor velocidad, casi 7 conmutaciones diarias durante su período, el doble y triple que los otros ministros de justicia durante el 2do gobierno aprista.</blockquote>
+Hace unos días Aurelio Pastor dijo lo siguiente:
+
+<a href="http://www.larepublica.pe/09-08-2013/aurelio-pastor-el-gobierno-ha-contratado-a-reos-para-que-hablen-contra-el-apra">"Han existido otros ministros que han firmado más gracias (presidenciales) que yo"</a>
+
+Esto fue inmediatamente después que aparezca el avance del programa Cuarto Poder para hoy Domingo, donde se mostrará un vídeo en el que aparentemente Aurelio Pastor elegía a dedo los potenciales beneficiados por #narcoindultos y conmutaciones de pena, mientras come una empanada que le invitaron.
+
+<a href="http://es.wikipedia.org/wiki/Ministro_de_Justicia_del_Per%C3%BA#Ministros_de_Justicia_.281981-2011.29">Según Wikipedia estos fueron los Ministros de Justicia</a> y sus períodos durante el 2do gobierno aprista:
+<pre>María Zavala Valladares	   | 28 de julio de 2006 - 19 de diciembre de 2007  | (510 días en el cargo)	
+Rosario Fernández Figueroa | 20 de diciembre de 2007 - 10 de julio de 2009  | (569 días en el cargo)
+Aurelio Pastor Valdivieso  | 11 de julio de 2009 - 16 de marzo de 2010      | (249 días en el cargo)
+Víctor García Toma	       | 18 de marzo de 2010 - 12 de septiembre de 2010 | (179 días en el cargo)
+Rosario Fernández Figueroa | 14 de septiembre de 2010 - 28 de julio de 2011 | (318 días en el cargo)</pre>
+Ya que tengo en mi computadora TODAS las normas jurídicas emitidas por el ministerio durante los años 2006-2011 podemos contar cuantas conmutaciones de penas y #narcoindultos fueron firmadas durante el período de cada ministro (<a href="http://aniversarioperu.wordpress.com/2013/07/20/los-narcoindultados-con-fecha-de-indulto-usando-linux/">ver un post anterior para que sepas como descargué las TODAS las normas jurídicas.</a>).
+
+Este es el plan:
+<ol>
+<ol>
+	<li>crear un folder para cada ministro y copiar todas las normas del ministerio emitidas durante su período como ministro.</li>
+	<li>para cada ministro, buscar el número de indultados/conmutados de pena</li>
+	<li>hacer un gráfico que resuma los resultados</li>
+</ol>
+</ol>
+<h2>Seleccionar las normas del MinJus emitidas durante el período de cada ministro</h2>
+<h4>Para la exministra María Zavala</h4>
+[code language="bash"]
+# copiar a folder normas del 28 al 31 de Julio del 2006
+ls *txt | awk -F '-' '$1 > 27' | grep '07-06.txt' | xargs -I {} cp -v {} zavala/.
+
+# copiar a folder normas del 1 de Agosto al 31 de Diciembre del 2006
+ls *txt | awk -F '-' '$2 > 07' | grep '06.txt' | xargs -I {} cp -v {} zavala/.
+
+# copiar a folder normas del 1 de Enero al 31 de Noviembre del 2007
+ls *txt | awk -F '-' '$2 < 12' | grep '07.txt' | xargs -I {} cp -v {} zavala/.
+
+# copiar a folder normas del 1 de Diciembre al 19 de Diciembre del 2007
+ls *txt | grep '12-07.txt' | awk -F '-' '$1 < 20' | xargs -I {} cp -v {} zavala/.
+[/code]
+
+<a href="http://www.timeanddate.com/date/durationresult.html?d1=28&amp;m1=07&amp;y1=2006&amp;d2=19&amp;m2=12&amp;y2=2007&amp;ti=on">Del 28 de Julio del 2006 al 19 de Diciembre del 2007 hay 510 días</a> y nosotros hemos guardado en el folder <code>zavala</code> 510 archivos:
+
+[code language="bash"]
+ls zavala/ | wc -l
+510
+[/code]
+
+Entonces vamos por buen camino.
+<h4>Para la exministra Rosario Fernández (1er período)</h4>
+Fechas: 20 de diciembre de 2007 - 10 de julio de 2009
+
+[code language="bash"]
+# copiar a folder normas del 20 al 31 de Diciembre del 2007
+ls *txt | grep '12-07.txt' | awk -F '-' '$1 > 19' | xargs -I {} cp -v {} fernandez1/.
+
+# copiar a folder normas del 1 de Enero al 31 de Diciembre del 2008
+ls *txt | grep '08.txt' | xargs -I {} cp -v {} fernandez1/.
+
+# copiar a folder normas del 1 de Enero al 30 de Junio del 2009
+ls *txt | grep '09.txt' | awk -F '-' '$2 < 07' | xargs -I {} cp -v {} fernandez1/.
+
+# copiar a folder normas del 1 al 10 de Julio del 2009
+ls *txt | grep '07-09.txt' | awk -F '-' '$1 < 11' | xargs -I {} cp -v {} fernandez1/.
+
+# tenemos 563 archivos
+ls fernandez1/ | wc -l
+563
+[/code]
+<h4>Para el exministro Aurelio Pastor</h4>
+Fechas: 11 de julio de 2009 - 16 de marzo de 2010
+
+[code language="bash"]
+# copiar a folder normas del 11 al 31 de Julio del 2009
+ls *txt | grep '07-09.txt' | awk -F '-' '$1 > 10' | xargs -I {} cp -v {} pastor/.
+
+# copiar a folder normas del 1 de Agosto al 31 de Diciembre del 2009
+ls *txt | grep '09.txt' | awk -F '-' '$2 > 07' | xargs -I {} cp -v {} pastor/.
+
+# copiar a folder normas del 1 de Enero al 29 de Febrero del 2010
+ls *txt | grep '10.txt' | awk -F '-' '$2 < 03' | xargs -I {} cp -v {} pastor/.
+
+# copiar a folder normas del 1 al 16 de Marzo del 2010
+ls *txt | grep '03-10.txt' | awk -F '-' '$1 < 17' | xargs -I {} cp -v {} pastor/.
+
+# tenemos 249 archivos
+ls pastor/ | wc -l
+249
+[/code]
+<h4>Para el exministro Víctor García Toma</h4>
+Fechas: 18 de marzo de 2010 - 12 de septiembre de 2010
+
+[code language="bash"]
+# copiar a folder normas del 18 al 31 de Marzo 2010
+ls *txt | grep '03-10.txt' | awk -F '-' '$1 > 17' | xargs -I {} cp -v {} toma/.
+
+# copiar a folder normas del 1 de Abril al 31 de Agosto del 2010
+ls *txt | grep '10.txt' | awk -F '-' '$2 < 09' | awk -F '-' '$2 > 03' | xargs -I {} cp -v {} toma/.
+
+# copiar a folder normas del 1 al 12 de Septiembre del 2010
+ls *txt | grep '09-10.txt' | awk -F '-' '$1 < 13' | xargs -I {} cp -v {} toma/.
+
+ls toma/ | wc -l
+179
+[/code]
+<h4>Para la exministra Rosario Fernández (2do período)</h4>
+Fechas: 14 de septiembre de 2010 - 28 de julio de 2011
+
+[code language="bash"]
+# copiar a folder normas del 14 al 30 de Septiembre del 2010
+ls *txt | grep '09-10.txt' | awk -F '-' '$1 > 13' | xargs -I {} cp -v {} fernandez2/.
+
+# copiar a folder normas del 1 de Octubre al 31 de Diciembre del 2010
+ls *txt | grep '10.txt' | awk -F '-' '$2 > 09' | xargs -I {} cp -v {} fernandez2/.
+
+# copiar a folder normas del 1 de Enero al 30 de Junio del 2011
+ls *txt | grep '11.txt' | awk -F '-' '$2 < 07' | xargs -I {} cp -v {} fernandez2/.
+
+# copiar a folder normas del 1 al 28 de Julio del 2011
+ls *txt | grep '07-11.txt' | awk -F '-' '$1 < 29' | xargs -I {} cp -v {} fernandez2/.
+
+ls fernandez2/ | wc -l
+317
+[/code]
+<h2>2. Para cada ministro, buscar el número de indultados/conmutados de pena</h2>
+Podemos comenzar con el ministro Pastor. Podemos usar el comando <code>grep</code> para cuántas veces se usó la palabra <code>conmutarle</code> en cada una de las 249 normas jurídicas emitidas durante su período.
+
+[code language="bash" light="true"]
+grep -i conmutarle pastor/*
+[/code]
+
+pastor/04-03-10.txt:<strong><span style="color: #800080;">conmutarle</span></strong> de 04 años a 02 años 03 meses de pena privativa de libertad; la que vencerá el 12 de
+pastor/04-03-10.txt:8. HIDALGO RODRIGUEZ, MARCO ANTONIO, <strong><span style="color: #800080;">conmutarle</span></strong> de 06 años 08 meses a 03
+pastor/04-03-10.txt:9. CANALES RUGEL, GUILLERMO AMANCIO, <strong><span style="color: #800080;">conmutarle</span></strong> de 09 años a 05 años de pena
+pastor/04-03-10.txt:10. CORONADO VILCA, MARIO, <strong><span style="color: #800080;">conmutarle</span></strong> de 08 años a 05 años de pena privativa de
+pastor/04-03-10.txt:<strong><span style="color: #800080;">conmutarle</span></strong> de 06 años 08 meses a 03 años de pena privativa de libertad; la que vencerá el 25 de
+pastor/04-03-10.txt:12. CHALCO RAMIREZ, JHON LUIS, <strong><span style="color: #800080;">conmutarle</span></strong> de 06 años a 03 años de pena privativa
+pastor/04-03-10.txt:GUILLERMO, <strong><span style="color: #800080;">conmutarle</span></strong> de 13 años a 08 años 09 meses de pena privativa de libertad; la que
+pastor/04-03-10.txt:14. ALBA BERMUDEZ, RONEI EBAN, <strong><span style="color: #800080;">conmutarle</span></strong> de 06 años 06 meses a 03 años 04
+pastor/04-03-10.txt:15. RODRIGUEZ MANSILLA, CARLOS ALFREDO, <strong><span style="color: #800080;">conmutarle</span></strong> de 05 años a 03 años 04
+...
+Por cada persona que recibió conmutación de pena se usó 1 vez la palabra <strong>conmutarle</strong> y podemos usar el número de veces que se usó esta palabra como indicador del número de conmutaciones de pena.
+
+[code language="bash"]
+# ministra María Zavala
+grep -i conmutarle zavala/* | wc -l
+0
+
+# ministra Rosario Fernández, 1er período
+grep -i conmutarle fernandez1/* | wc -l
+2065
+
+# ministro Aurelio Pastor
+grep -i conmutarle pastor/* | wc -l
+1679
+
+# ministro García Toma
+grep -i conmutarle toma/* | wc -l
+434
+
+# ministra Rosario Fernández, 2do período
+grep -i conmutarle fernandez2/* | wc -l
+1042
+[/code]
+<h2>Quién indultó más presos?</h2>
+Bueno, los números indican que Aurelio Pastor no fue el ministro que firmó más gracias presidenciales. Ese privilegio pertenece a Rosario Fernández.
+
+Pero hay que tomar en cuenta que Rosario Fernández fue ministra dos veces, un total de 887 días, mientras que Pastor sólo fue ministro por 249 días.
+
+Es curioso ver que la ministra Zavala no firmó ningún indulto a pesar que estuvo 510 días en el cargo. La lluvia de indultos comezó con la ministra Rosario Fernández, continuó con Aurelio Pastor, pero se desaceleró considerablemente durante la gestión de García Toma. Y los indultos regresaron a toda marcha durante el 2do período de Rosario Fernández.
+<h2>Hipótesis nula</h2>
+Deberíamos encontrar que el número de conmutados no depende de quién haya sido ministro. Si un ministro estuvo pocos días en el cargo debió haber firmado pocos indultos. Si un ministro estuvo muchos días, entonces tuvo oportunidad de firmar muchos indultos (o conmutaciones).
+
+Entonces <b>la hipótesis nula es que no hay efecto del ministro de turno sobre el número de indultos</b>. <b>Deberíamos encontrar una correlación lineal</b> entre número de días en el cargo versus número de conmutaciones emitidas.
+
+<b>Si esto es falso y hubieron incentivos extraordinarios</b> para emitir conmutaciones y algunos presos estuvieron pagando para ser liberados con especial intensidad durante el período de cierto ministro, <b>no será posible encontrar una correlación</b> entre el número de días que estuvo en el cargo cada ministro y el número de conmutaciones otorgadas.
+
+Por ejemplo podemos plotear número de días en el cargo <i>versus</i> número de indultos otorgados (usando el <a href="http://es.wikipedia.org/wiki/R_(lenguaje_de_programaci%C3%B3n)">paquete estadístico R</a>):
+
+[code language="r"]
+library(ggplot2)
+h1 <- read.csv("h1.csv", row.names=NULL)
+
+png(filename="h1.png")
+p <- qplot(dias, conmutaciones, data=h1,
+    main="Relación entre días en el cargo \n vs. \n número de conmutaciones de pena?",
+     label=ministro)
+p + geom_text(hjust=0, vjust=0, aes(colour=factor(ministro))) +
+    geom_smooth(method="lm", se=FALSE)
+dev.off()
+[/code]
+
+<a href="http://aniversarioperu.files.wordpress.com/2013/08/h1.png"><img class="alignnone size-full wp-image-102" alt="Relación entre número de días y número de conmutaciones" src="http://aniversarioperu.files.wordpress.com/2013/08/h1.png" width="480" height="480" /></a>
+
+<b>El gráfico nos da indicios que no hay correlación</b> entre número de días y número de conmutaciones.
+
+Para estar seguros podemos <strong>calcular el coeficiente de correlación de Pearson</strong> para averiguar si hay correlación positiva <code>(r = 1)</code> o negativa <code> (r = -1)</code>:
+
+[code language="r"]
+> with(h1, cor(dias, conmutaciones))
+[1] 0.168943
+[/code]
+
+El valor de <code>r = 0.168</code> es muy cercano a <code>0</code>, por lo tanto no hay correlación positiva ni negativa entre el número de días y el número de conmutaciones de penas.
+
+Entonces podemos rechazar la hipótesis nula, y aparentemente durante el período de ciertos ministros se emitieron conmutaciones a mano llena (Rosario Fernández, Aurelio Pastor), mientras que durante el período de otros ministros (García Toma y María Zavala) no se emitieron muchos.
+
+Lo que dice Aurelio Pastor es cierto, él no es el exministro que firmó más conmutaciones de pena. Pero habría que preguntarse <strong>por qué Aurelio Pastor firmó conmutaciones con semejante velocidad (1679 conmutaciones en 249 días durante su período).</strong>
+
+Aurelio Pastor firmó menos conmutaciones porque estuvo muy pocos días como ministro. Pastor <strong>firmó casi 7 indultos por día</strong>, una velocidad tremenda con la pluma, <strong>el doble de velocidad que Rosario Fernández y mucho más rápido que García Toma</strong>.
+
+Aquí los datos:
+<pre>ministro,  dias, conmutaciones, velocidad
+Toma,       179,           434,      2.42
+Pastor,     249,          1679,      6.74
+Fernandez2, 318,          1042,      3.28
+Zavala,     510,             0,      0
+Fernandez1, 569,          2065,      3.63</pre>
+Vean el gráfico, es demasiado obvio!
+
+[code language="r"]
+png(filename="velocidad.png")
+c <- ggplot(h1, aes(ministro, velocidad), fill=factor(ministro))
+c + opts(title="número de conmutaciones firmadas por día en funciones") +
+    geom_bar(aes(colour=factor(ministro)))
+dev.off()
+[/code]
+
+<a href="http://aniversarioperu.files.wordpress.com/2013/08/velocidad.png"><img class="alignnone size-full wp-image-101" alt="Número de conmutaciones firmadas por día" src="http://aniversarioperu.files.wordpress.com/2013/08/velocidad.png" width="480" height="480" /></a>
+Es cierto que Aurelio Pastor firmó menos conmutaciones, pero es porque no tuvo tiempo! Tuvieron que sacarlo como ministro por el escándalo del indulto a Crousillat.
+
+Habría que preguntarle por qué tanto apuro en firmar conmutaciones.
+
+Imagínense si Pastor hubiera sido ministro durante los 5 años! Las cárceles habrían quedado vacías?

@@ -1,0 +1,175 @@
+[caption id="" align="alignleft" width="300"]<a href="http://commons.wikipedia.org/wiki/File:Garciaalan09112006-1.jpg" target="_blank"><img class="zemanta-img-inserted zemanta-img-configured" title="Português: O presidente do Peru Alan García em..." alt="Português: O presidente do Peru Alan García em..." src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Garciaalan09112006-1.jpg/300px-Garciaalan09112006-1.jpg" width="300" height="411" /></a> Português: O presidente do Peru Alan García em Brasília. Português: El presidente de Perú Alan García en Brasília. (Photo credit: Wikipedia)[/caption]
+
+En un <a href="http://aniversarioperu.wordpress.com/2013/07/18/usando-herramientas-de-linux-con-los-narcoindultos/"><i>post</i> anterior</a> describí un ejercicio de cómo utilizar herramientas de Linux para encontrar en qué fecha del segundo gobierno de <a class="zem_slink" title="Alan García" href="http://en.wikipedia.org/wiki/Alan_Garc%C3%ADa" target="_blank" rel="wikipedia">Alan García</a> se emitieron indultos y conmutaciones de penas a personas que luego habían reincidido en el delito.
+
+Aquella oportunidad solo bajé tres Normas de la <a href="http://spij.minjus.gob.pe/spij_normas.asp">página web del Ministerio de Justicia</a> y había encontrado una beneficiada con la gracia presidencial que había reincido en el tráfico ilícito de drogas.
+
+En este <i>post</i> describo cómo hice para encontrar la fecha de indulto/conmutación de pena de un buen número de reincidentes de la lista publicada por el periodista Martín Hidalgo en su <a href="http://www.scribd.com/mart%C3%ADn_hidalgo_20">cuenta de Scribd</a>.
+
+Descargar la lista contenida en cinco archivos:
+<ul>
+	<li>http://www.scribd.com/doc/134323216/DOC1</li>
+	<li>http://www.scribd.com/doc/134323989/DOC2</li>
+	<li>http://www.scribd.com/doc/134324226/DOC3</li>
+	<li>http://www.scribd.com/doc/134324446/DOC4</li>
+	<li>http://www.scribd.com/doc/134324573/DOC5</li>
+</ul>
+Convertir los PDFs a archivos de imagen, usar OCR para convertir la imagen a texto y agrupar todos los nombres en un solo archivo:
+
+[code language="bash"]
+# Convertir los PDFs a archivos de imagen
+pdfimages 134323216-DOC1.pdf doc1
+pdfimages 134323989-DOC2.pdf doc2
+pdfimages 134324226-DOC3.pdf doc3
+pdfimages 134324446-DOC4.pdf doc4
+pdfimages 134324573-DOC5.pdf doc5
+
+# aplicar OCR a las imágenes
+tesseract doc1-000.ppm doc1 -l spa
+tesseract doc2-000.ppm doc2 -l spa
+tesseract doc3-000.ppm doc3 -l spa
+tesseract doc4-000.ppm doc4 -l spa
+tesseract doc5-000.ppm doc5 -l spa
+
+# eliminar líneas en blanco y juntar todos los nombres en un solo archivo
+cat doc1.txt doc2.txt doc3.txt doc4.txt | sed '/^\s*$/d' | sort -u > angelitos.txt
+[/code]
+
+
+Luego es necesario una pequeña edición manual del archivo <code>angelitos.txt</code> para eliminar línes que contengan fechas y otro texto que no sean nombres y nos aseguramos que haya un nombre por línea. Obtenemos en total 161 líneas/nombres.
+
+Ahora tenemos que descargar todas las Normas legales emitidas por el Ministerio de Justicia durante el segundo gobierno de Alan García, las cuales incluyen los nombres de los indultados y cantidad de pena que les fue reducida.
+Ese periodo de tiempo tiene 1,826 días y para no bajar los PDFs manualmente, podemos usar para la descarga una herramienta de Linux muy útil llamada <code>curl</code>.
+
+Podemos crear un archivo de texto llamado <code>lista_URL.txt</code> conteniendo los comandos necesarios para bajar los PDFs.
+
+
+[code language="bash"]
+## Lista de links de las Normas del Ministerio de Justicia del 2006 al 2011
+
+# Bajar fechas 00-01-06 hasta 39-09-09
+curl -o '#1#2-0#3-0#4.pdf' 'http://spij.minjus.gob.pe/Normas/textos/[0-1][0-1]0[1-1]0[6-6]T.pdf'
+sleep $[ ( RANDOM % 10 ) + 1]m
+
+# Bajar fechas 00-01-06 hasta 39-09-09
+curl -o '#1#2-0#3-0#4.pdf' 'http://spij.minjus.gob.pe/Normas/textos/[0-3][0-9]0[1-9]0[6-9]T.pdf'
+sleep $[ ( RANDOM % 10 ) + 1]m
+
+# Bajar fechas 00-01-10 hasta 39-09-11
+curl -o '#1#2-0#3-#4.pdf' 'http://spij.minjus.gob.pe/Normas/textos/[0-3][0-9]0[1-9][10-11]T.pdf'
+sleep $[ ( RANDOM % 10 ) + 1]m
+
+# Bajar fechas 00-10-06 hasta 39-12-09
+curl -o '#1#2-1#3-0#4.pdf' 'http://spij.minjus.gob.pe/Normas/textos/[0-3][0-9]1[0-2]0[6-9]T.pdf'
+sleep $[ ( RANDOM % 10 ) + 1]m
+
+# Bajar fechas 00-10-10 hasta 39-12-11
+curl -o '#1#2-1#3-#4.pdf' 'http://spij.minjus.gob.pe/Normas/textos/[0-3][0-9]1[0-2][10-11]T.pdf'
+[/code]
+
+
+Podemos correr el programa usando el comando:'
+
+[code language="bash" light="true"]
+nohup bash lista_URL.txt &
+[/code]
+
+Ejecuté el comando en la computadora de la oficina que está prendida todo el día, todos los días, y me fui a dormir.
+
+Al día siguiente encontré que habían 2,880 archivos descargados, de los cuales muchos eran falso positivos debido a fechas inexistentes (por ejemplo 00-01-06, el 0 de Enero del 2006) y pesan 1245 bytes. Los removemos y solo quedaron <b>2,184 archivos (los que pesan en total 1.2 Gigabytes!)</b>:
+
+[code language="bash" light="true"]
+find ./ -size 1245c -print0 | xargs -0 rm
+[/code]
+
+
+Durante el periodo <a href="http://www.timeanddate.com/date/durationresult.html?d1=01&amp;m1=01&amp;y1=2006&amp;d2=31&amp;m2=12&amp;y2=2011">2006-2011 hay 2,190 días</a>, por lo tanto al tener 2,184 archivos podemos estar seguros que tenemos la gran mayoría. Incluidos están archivos emitidos durante el gobierno de Toledo (inicio del año 2006) y durante el gobierno de Humala (segunda mitad del 2011), pero es no es muy importante para nuestros fines.
+
+Luego hay que convertir todos los PDFs a texto con el comando:
+
+[code language="bash" light="true"]
+for f in *pdf; do pdftotext -q $f; done
+[/code]
+
+Esta vez los <code>.txt</code> archivos producidos pesan en total 639 Megabytes.
+
+Hacemos la búsqueda de cada uno de los nombres en TODOS los archivos <code>.txt</code> que corresponden a las Normas emitidas por el minjus:
+
+[code language="bash" light="true"]
+cat angelitos.txt | awk '{print $1 " " $2 ", " $3}' | parallel grep -i {} *.txt > coincidencias.txt
+[/code]
+
+Luego de un rato el archivo <code>coincidencias.txt</code> tiene la lista de nombres de reincidentes que aparecen en al menos un archivo del Ministerio de Justicia. Hay 138 coincidencias en total:
+<pre>02-07-09.txt:8. ABATE LUCIANO, LUCIO, conmutarle de 05 años 06 meses a 03 años 07 meses de
+14-01-09.txt:56. AGUILAR TALAVERANO, JUAN CARLOS o AGUILA TALAVERANO, JUAN CARLOS,
+12-05-09.txt:18. ALARCON MORA, MIGUEL ANGEL, conmutarle de 08 años a 06 años 08 meses de
+28-01-10.txt:43. AGUIRRE ANGELES, ELVIS EDWIN, conmutarle de 04 años a 02 años de pena
+27-02-09.txt:6. AGUIRRE ANGULO, OMAR WILLIAMS, conmutarle de 07 años a 04 años 04 meses
+30-04-09.txt:7. ALCARRAZ CAMPOS, ABRAHAM, conmutarle de 05 años a 03 años 08 meses de
+17-04-10.txt:13. ALMEYDA LEON, CESAR ARTURO, conmutarle de 05 años a 03 años de pena
+17-06-09.txt:45. AMPARADO AMPARADO, ROLANDO WALTER o PAJARITO AMPARADO,
+29-01-10.txt:18. ALVAREZ RENGIFO, LUIS ALFONSO, conmutarle de 10 años a 04 años 06
+16-12-08.txt:61. ANDAVIZA CHILET, NILDA KARINA, conmutarle de 13 años a 10 años 10 meses de</pre>
+... etc
+
+Entonces si queremos averiguar en qué fecha fueron indultados aquellos que reincidieron por tráfico de drogas:
+
+[code language="bash" light="true"]
+cat angelitos.txt | grep -i DROGA
+[/code]
+
+Vemos que hay 22 angelitos que reincidieron con ese delito:
+<pre>CHOQUEHUANCA ANCO, MAURO MANUEL 17/12/2011 297 TRAFICO ILICITO DE DROGAS — FORM EP. ANCON
+CONDORI TITO, BLANCA NIEVES 05/05/2007 TRAFICO ILICITO DE DROGAS EP. MUJERES CHORRILLOS
+QUISPE PACHECO, LUZ ISABEL 30/03/2011 TRAFICO ILICITO DE DROGAS EP. MUJERES CHORRILLOS
+JARAMILLO BRIGIDO, CLINIA 11/06/2012 297 TRAFICO ILICITO DE DROGAS — FORM  EP. MUJERES CHORRILLOS
+MAYORGA PIMENTEL, HENRY JESUS 29/04/2010 297 TRAFICO ILICITO DE DROGAS — FORM EP. HUACHO
+AGUILAR TALAVERANO, JUAN CARLOS  07/09/2011 297 TRAFICO ILICITO DE DROGAS - FORM EP. HUACHO
+CARRASCO SARMIENTO, MIGUEL ANGEL 03/12/2010 TRAFICO ILICITO DE DROGAS EP. HUARAL
+BERNAL AGUILAR, JONATHAN 01/10/2010 TRAFICO ILICITO DE DROGAS EP. HUARAL
+TERAN MERCADO, JUAN CARLOS 15/04/2010 TRAFICO ILICITO DE DROGAS EP. HUARAL
+PACHECO HERBOZO, MIGUEL ANTONIO 26/05/2011 TRAFICO ILICITO DE DROGAS EP, HUARAL
+PANTA CASTILLO, OSCAR 23/01/2011 TRAFICO ILICITO DE DROGAS UBICACIÓN ACTUAL ' EP. HUARAL
+ENRIQUEZ DIAZ, JAIME 29/11/2009 TRAFICO ILICITO DE DROGAS EP. HUARAL
+PORTILLA PAREDES, ALEX BEDER 24/01/2010 TRAFICO ILICITO DE DROGAS EP. HUARAL
+MARTINEZ GONZALES, JORGE HUMBERTO 11/11/2009 TRAFICO ILICITO DE DROGAS EP. HUARAL
+LEVANO VENERO, JOHN ANTHONY 07/10/2011 TRAFICO ILICITO DE DROGAS EP. HUARAL
+MONTOYA GONZALES, JUAN JOSE 01/06/2011 TRAFICO ILICITO DE DROGAS EP. HUARAL
+MORILLO PUELLES, Francisca 03/04/2012 TRAFICO ILICITO DE DROGAS EP. HUARAZ
+CANO VASQUEZ, Yuri Cesar 07/09/2009 TRAFICO ILICITO DE DROGAS EP‘ ICA
+CUELLAR USURIANO, Julia 18/11/2010 TRAFICO ILICITO DE DROGAS EP. ICA
+MENDOZA CASTRO, Carlos Alberto 31/10/2012 TRAFICO ILICITO DE DROGAS
+PRINCIPE CLAUDIO, CeIestina 09/02/2013 TRAFICO ILICITO DE DROGAS EP. ICA
+RODRIGUEZ ROSADO, Sarita Veronica 30/03/2011 TRAFICO ILICITO DE DROGAS EP. ICA</pre>
+
+Y averiguamos en qué fechas fueron indultados con el siguiente comando:
+
+[code language="bash" light="true"]
+cat angelitos.txt | grep -i DROGA | awk '{print $1 " " $2 " " $3}' | while read NOMBRE; do grep -i "${NOMBRE}" coincidencias.txt; done
+[/code]
+
+Siendo este el resultado:
+<pre>11-12-09.txt:11. CHOQUEHUANCA ANCO, MAURO MANUEL, conmutarle de 07 años a 03 años de
+20-02-10.txt:7. CONDORI TITO, BLANCA NIEVES, conmutarle de 09 años a 04 años de pena privativa
+17-04-10.txt:12. QUISPE PACHECO, LUZ ISABEL, conmutarle de 06 años a 03 años de pena
+04-05-10.txt:62. JARAMILLO BRIGIDO, CLINIA, conmutarle de 08 años a 07 años 10 meses de
+23-04-09.txt:28. MAYORGA PIMENTEL, HENRY JESUS, conmutarle de 15 años a 09 años 02 meses
+14-01-09.txt:56. AGUILAR TALAVERANO, JUAN CARLOS o AGUILA TALAVERANO, JUAN CARLOS,
+04-02-10.txt:3. CARRASCO SARMIENTO, MIGUEL ANGEL, conmutarle de 07 años a 03 años 06
+09-02-10.txt:5. BERNAL AGUILAR, JONATHAN o BERNAL AGUILAR, YONATHAN, conmutarle
+12-05-09.txt:23. TERAN MERCADO, JUAN CARLOS, conmutarle de 06 años a 03 años de pena
+04-02-10.txt:12. PACHECO HERBOZO, MIGUEL ANTONIO, conmutarle de 03 años a 01 año 06
+16-12-08.txt:28. PANTA CASTILLO, OSCAR, conmutarle de 05 años a 04 años de pena privativa de
+14-01-09.txt:22. ENRIQUEZ DIAZ, JAIME o ENRIQUE DIAZ, JAIME, conmutarle de 04 años a 03 años
+01-05-09.txt:4. PORTILLA PAREDES, ALEX BEDER, conmutarle de 15 años a 07 años 07 meses de
+09-01-09.txt:11. MARTINEZ GONZALES, JORGE HUMBERTO, conmutarle de 05 años a 03 años 06
+17-12-10.txt:4. LEVANO VENERO, JOHN ANTHONY o LEVANO VENERO, JHON ANTHONY,
+16-12-08.txt:40. MONTOYA GONZALES, JUAN JOSE, conmutarle de 06 años a 05 años de pena
+22-12-09.txt:11. MORILLO PUELLES, FRANCISCA, conmutarle de 07 años a 03 años de pena
+25-04-09.txt:8. CANO VASQUEZ, YURI CESAR o CANO VASQUEZ, CESAR o GUZMAN VASQUEZ,
+09-05-09.txt:47. CUELLAR USURIANO, JULIA, conmutarle de 08 años a 05 años de pena privativa de
+11-12-08.txt:75. MENDOZA CASTRO, CARLOS ALBERTO, conmutarle de 06 años y 06 meses a 05
+01-01-09.txt:31. RODRIGUEZ ROSADO, SARITA VERONICA, conmutarle de 07 años a 03 años de</pre>
+Es interesante ver que a varios les redujeron la pena a la mitad o más de la mitad. En el supuesto que se haya estado cobrando por indultar presos, a estos les debe haber salido caro la reduccion de pena de 7 a 3 años (<strong>MAURO CHOQUEHUANCA, indultado el 11 de Diciembre del 2009</strong>) y de 15 a 7 años (<strong>ALEX PORTILLA indultado el 1 de Mayo del 2009</strong>).
+
+He creado un <a href="https://mega.co.nz/#!n5QCABTS!OsKw82KDSVtBdTSYk_FFJhwLXr0SXC46JEwfELeI_sY">archivo Torrent</a> donde he colgado todos los archivos PDF y TXT para que te los puedas descargar. Recuerda que<strong> son 4,368 archivos y pesan en total 1.9 Gigabytes</strong>. Los ministerios deberían poner a disposición todas sus normas para descargarlas en masa y no tener que hacer este tipo de artilugios.

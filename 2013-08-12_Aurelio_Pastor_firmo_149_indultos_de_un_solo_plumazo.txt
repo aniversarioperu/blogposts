@@ -1,0 +1,42 @@
+[caption id="" align="alignleft" width="250"]<a href="http://evaperu.blogspot.fi/2009/04/blog-post_15.html"><img alt="" src="http://aniversarioperu.files.wordpress.com/2013/08/9eecf-pastor.jpg" width="250" /></a> foto Revista Eva[/caption]
+<blockquote>Aurelio Pastor se ufana que en un sólo día pudo haber firmado 31 indultos, pero en realidad fue capaz de conmutar 149 presos en un solo día, de un solo plumazo.</blockquote>
+En el vídeo propalado por Cuarto Poder se ve al exministro de justicia Aurelio Pastor fanfarronear, mientras come una empanada, de sus poderes como conmutador de penas.
+
+Pastor dice que ha logrado firmar hasta 31 conmutaciones en un solo día (<a href="http://www.youtube.com/watch?v=F3kZNdCsN1s#t=00m24s">ver en Youtube</a>)
+<blockquote>Hoy día voy a firmar 31 más, hoy día, ayer he firmado como 10, 15</blockquote>
+Puede parecer muchos indultos firmados en un día. Pero en realidad Aurelio Pastor <strong>logró firmar conmutaciones de pena de 149 presos en un solo día! de un solo plumazo!</strong>
+<h4>Cómo encontrar ese dato</h4>
+En un post anterior expliqué <a href="http://aniversarioperu.wordpress.com/2013/07/20/los-narcoindultados-con-fecha-de-indulto-usando-linux/">cómo descargar TODAS las normas jurídicas emitidas</a> por el Ministerio de Justicia durante los años 2006-2011.
+En otro post expliqué <a href="http://aniversarioperu.wordpress.com/2013/08/11/aurelio-pastor-y-su-pluma-veloz-narcoindultos/">cómo contar el número de indultos firmados por cada exministro de justicia</a> durante el 2do gobierno aprista.
+
+Luego de seguir las intrucciones en esos posts, obtendrás un folder <code>pastor</code> con todas las normas jurídicas emitidas durante su gestión como ministro.
+
+Lo que queremos averiguar es cuántas conmutaciones firmó Aurelio Pastor por día y ver en qué día se firmó el mayor número de supuestos #narcoindultos.
+
+Este comando de Linux hace la búsqueda y ordena el número de conmutados por día de menor a mayor.
+
+[code language="bash" light="true"]
+grep -i 'conmutarle' * | awk -F ':' '{print $1}' | sort | uniq -c | sort -n | sed 's/.txt//g'
+[/code]
+
+Este es parte del resultado:
+<pre> ...
+ 58 03-11-09
+ 63 14-10-09
+ 65 25-12-09
+ 66 13-02-10
+ 68 17-12-09
+ 69 29-11-09
+ 71 04-03-10
+ 75 07-01-10
+ 85 15-01-10
+149 22-12-09</pre>
+Como vemos <strong>el 22 de Diciembre del 2009 (fecha 22-12-09) Aurelio Pastor firmó el indulto de 149 presos!</strong>
+
+<strong>Qué coincidencia que ocurriera a 3 días de celebrarse la navidad</strong>. Parece que Santa Claus tiene competidores.
+
+Aquí está la norma jurídica emitida ese día. Te la puedes descargar desde el sitio web del Ministerio de Justicia.
+<a href="http://spij.minjus.gob.pe/Normas/textos/221209T.pdf">http://spij.minjus.gob.pe/Normas/textos/221209T.pdf</a>
+
+He extraído todos los nombres de los agraciados ese día y la puedes ver aquí:
+<a href="https://github.com/aniversarioperu/narcoindultos/blob/master/indultados_22_Diciembre_2009.txt">indultados_22_Diciembre_2009.txt</a>
