@@ -69,7 +69,14 @@ Pues <strong>es de esperarse que el 1.7% de socios se lleve la cuarta parte de l
 Aqui el código en la consola de Linux:
 
 [code language="bash" light="true"]
-# convertir pdf a texto y extraer nombres y ganancias
+# Bajarse la memoria en PDF y extraer las páginas 34, 35 y 36
+pdftk Memoria_APDAYC_2012.pdf cat 34-36 output mas_productivos_2012.pdf
+
+# convertir PDF a texto
+pdftotext -layout mas_productivos_2012.pdf
+
+# hacer limpieza manual para eliminar texto que no se necesita (joyas y premios)
+# extraer nombres y ganancias
 cat mas_productivos_2012.txt | sed 's/S\/\.//g' | sed 's/\$//g' | sed 's/\s\+/ /g' | sed -r 's/([A-Z]),/\1/g' | sed 's/,//g' | sed -r 's/(([A-Z]+\s)+)/\1,/g' | sed 's/ ,/,/g' | sed -r 's/^[0-9]+\s[0-9]+\s//g' | sed -r 's/\s*$//g' > tmp_mas_productivos.txt
 
 # dibujar el gráfico usando Python y matplotlib
@@ -241,7 +248,6 @@ print output
 Código de cuáles miembros del consejo directivo se llevan más regalías
 
 https://gist.github.com/aniversarioperu/6891888
-
 <h3>Aquí el código y datos para generar el pie-chart</h3>
 https://gist.github.com/aniversarioperu/6863753
 
