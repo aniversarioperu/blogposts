@@ -20,17 +20,17 @@ Tarán! los resultados dicen que <strong>NO hay correlación entre las variables
 
 [caption id="attachment_279" align="aligncenter" width="553"]<a href="http://aniversarioperu.files.wordpress.com/2013/10/plot_ejemplo1.png"><img class="size-full wp-image-279" alt="Ejemplo de correlación significativa" src="http://aniversarioperu.files.wordpress.com/2013/10/plot_ejemplo1.png" width="553" height="431" /></a> Ejemplo de correlación significativa[/caption]
 
-Hay obvia correlación, a mayor valor de x, menor valor de y. Además los valores de R y <em>p-value</em> son: <strong>R = 0.82, p = 0.0002. El coeficiente de correlación R es cercano a 1, y el <em>p-value</em> es mucho menor 0.05. Osea altamente significativo</strong>.
+Hay obvia correlación, a mayor valor de x, menor valor de y. Además los valores de R y <em>p-value</em> son: <strong>R = 0.82, p = 0.0002. El coeficiente de correlación R es cercano a 1, y el <em>p-value</em> es mucho menor que 0.05. Osea altamente significativo</strong>.
 
 Pero los valores que salen de analizar los datos del estudio académico son los siguientes:
 
-<strong>R = 0.04</strong> (es casi cero, <strong>si fuera cercano a 1</strong> sabes que <strong>hay correlación. Pero en este caso  <strong>no tiene nada!</strong>)</strong>
+<strong>R = 0.04</strong> (es casi cero, <strong>si fuera cercano a 1</strong> sabes que <strong>hay correlación. Pero en este caso <strong>no tiene nada!</strong>)</strong>
 
 <strong>p = 0.157</strong> (es mayor que 0.05, osea datos no significativos).
 
-Ya ves chocherita,<strong> no hay tendencia, no hay correlación no hay causación.</strong> Señores, no tiene nada!
+Ya ves chocherita,<strong> no hay tendencia, no hay correlación, no hay causación.</strong> Señores, no tiene nada!
 <h2>Pero hay más</h2>
-El autor del estudio académico da como ejemplo (pag. 93) que en Puno (con alto déficit calórico) se gasta menos por niño que en Lima. <strong>Pero este es un dato anecdótico</strong>. Ya pe causa! <strong>estudios académicos no se basan en datos anecdóticos</strong>. Además si tú criticas que la política de Qali Warma está mal, debes demostrar que en su conjunto se está gastando menos dinero donde más se necesita. Pero lamentablemente los datos y estadísticas duras refutan tus conclusiones.<strong> En este punto en particular la política será desordenada, o sin ningún patrón o tendencia, pero no es lo que afirmas pe varón.</strong>
+El autor del estudio académico da como ejemplo (pag. 93) que en Puno (con alto déficit calórico) se gasta menos por niño que en Lima. <strong>Pero este es un dato anecdótico</strong>. Ya pe causa! <strong>Estudios académicos no se basan en datos anecdóticos</strong>. Además si tú criticas que la política de Qali Warma está mal, debes demostrar que en su conjunto se está gastando menos dinero donde más se necesita. Pero lamentablemente los datos y estadísticas duras refutan tus conclusiones.<strong> En este punto en particular la política será desordenada, o sin ningún patrón o tendencia, pero no es lo que afirmas pe varón.</strong>
 
 Ya otras personas han criticado este dichoso trabajo, <a href="http://www.larepublica.pe/columnistas/contracandela/quien-quiere-comerse-la-comida-de-los-ninos-pobres-20-10-2013">@rmapalacios</a>, la ministra <a href="http://www.larepublica.pe/21-10-2013/hariamos-mal-minando-un-programa-que-busca-alimentar-a-nuestros-ninos">Mónica Rubio</a>, y <a href="http://diario16.pe/noticia/39580-campana-tremendista-comercio-enrique-vasquez-contra-programas-sociales">Diario16</a>.
 
