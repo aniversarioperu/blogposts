@@ -10,7 +10,7 @@ Este es el gráfico 50:
 <h2>Rehaciendo el análisis</h2>
 Al ojo se vé que no hay relación entre las variables. Copié los datos que están en la tabla 31 (de la página 123) y ajusté una <a href="http://es.wikipedia.org/wiki/Regresi%C3%B3n_lineal">regresión lineal</a> en el programa estadístico R.
 
-<strong>Mira los puntos todos aglomerados al centro. No dejes que la línea de tendencia te engañe</strong>. El coeficiente de correlación R es casi cero (0.04) y el <i>p-value</i> no es significativo ( p &gt; 0.05).
+<strong>Mira los puntos todos aglomerados al centro. No dejes que la línea de tendencia te engañe</strong>. El coeficiente de determinación R<sup>2</sup> es casi cero (0.04) y el <i>p-value</i> no es significativo ( p &gt; 0.05).
 
 Tarán! los resultados dicen que <strong>NO hay correlación entre las variables </strong>y que <strong>las conclusiones del autor de líneas arriba están erradas.</strong> NO es cierto que los datos indiquen que se gaste menos dinero en áreas con mayor deficiencia calórica.
 
@@ -20,11 +20,11 @@ Tarán! los resultados dicen que <strong>NO hay correlación entre las variables
 
 [caption id="attachment_279" align="aligncenter" width="553"]<a href="http://aniversarioperu.files.wordpress.com/2013/10/plot_ejemplo1.png"><img class="size-full wp-image-279" alt="Ejemplo de correlación significativa" src="http://aniversarioperu.files.wordpress.com/2013/10/plot_ejemplo1.png" width="553" height="431" /></a> Ejemplo de correlación significativa[/caption]
 
-Hay obvia correlación, a mayor valor de x, menor valor de y. Además los valores de R y <em>p-value</em> son: <strong>R = 0.82, p = 0.0002. El coeficiente de correlación R es cercano a 1, y el <em>p-value</em> es mucho menor que 0.05. Osea altamente significativo</strong>.
+Hay obvia correlación, a mayor valor de x, menor valor de y. Además los valores de R<sup>2</sup> y <em>p-value</em> son: <strong>R<sup>2</sup> = 0.82, p = 0.0002. El coeficiente R<sup>2</sup> es cercano a 1, y el <em>p-value</em> es mucho menor que 0.05. Osea altamente significativo</strong>.
 
 Pero los valores que salen de analizar los datos del estudio académico son los siguientes:
 
-<strong>R = 0.04</strong> (es casi cero, <strong>si fuera cercano a 1</strong> sabes que <strong>hay correlación. Pero en este caso <strong>no tiene nada!</strong>)</strong>
+<strong>R<sup>2</sup> = 0.04</strong> (es casi cero, <strong>si fuera cercano a 1</strong> sabes que <strong>hay correlación. Pero en este caso <strong>no tiene nada!</strong>)</strong>
 
 <strong>p = 0.157</strong> (es mayor que 0.05, osea datos no significativos).
 
