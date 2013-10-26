@@ -33,9 +33,41 @@ Ya ves chocherita,<strong> no hay tendencia, no hay correlación, no hay causaci
 El autor del estudio académico da como ejemplo (pag. 93) que en Puno (con alto déficit calórico) se gasta menos por niño que en Lima. <strong>Pero este es un dato anecdótico</strong>. Ya pe causa! <strong>Estudios académicos no se basan en datos anecdóticos</strong>. Además si tú criticas que la política de Qali Warma está mal, debes demostrar que en su conjunto se está gastando menos dinero donde más se necesita. Pero lamentablemente los datos y estadísticas duras refutan tus conclusiones.<strong> En este punto en particular la política será desordenada, o sin ningún patrón o tendencia, pero no es lo que afirmas pe varón.</strong>
 
 Ya otras personas han criticado este dichoso trabajo, <a href="http://www.larepublica.pe/columnistas/contracandela/quien-quiere-comerse-la-comida-de-los-ninos-pobres-20-10-2013">@rmapalacios</a>, la ministra <a href="http://www.larepublica.pe/21-10-2013/hariamos-mal-minando-un-programa-que-busca-alimentar-a-nuestros-ninos">Mónica Rubio</a>, y <a href="http://diario16.pe/noticia/39580-campana-tremendista-comercio-enrique-vasquez-contra-programas-sociales">Diario16</a>.
+<h1>Actualización 22-Oct. Otro error</h1>
+El señor Pepe Botella, en un comentario a este post, me avisa que él ha encontrado otro ejemplo de uso y abuso de las estadísticas en el mentado reporte académico que la prensa usa para atacar a Qali Warma.
 
-Cuando tenga tiempo libre revisaré el resto del trabajo académico.
-<h2>Sección geek</h2>
+Quiero pensar que este ha sido un error de mal uso de estadísticas, aunque el asunto se vuelve un poco rochoso.
+
+En la página 36 empieza un floro donde el autor manifiesta que Qali Warma gasta menos dinero en los más pobres ("pobres multidimensionales").
+<blockquote>...la poca atención que reciben los pobres multidimensionales en términos de cobertura de servicios básicos genera una fuente de ineficacia en cuanto a la distribución del gasto público</blockquote>
+<blockquote>La distribución departamental del gasto social está mal enfocada pues existen departamentos con un alto nivel de pobreza multidimensional que reciben un gasto social por debajo del promedio nacional</blockquote>
+Osea la hipótesis es <strong>hay menor gasto en departamentos con mayor porcentaje de pobreza</strong>. Esto se debería demostrar con otra regresión lineal de ajuste significativo a la línea de tendencia. Y eso es lo que prentende hacer el autor al mostrar un gráfico muy colorido:
+
+[caption id="attachment_300" align="aligncenter" width="607"]<a href="http://aniversarioperu.files.wordpress.com/2013/10/plot_19.png"><img class="size-full wp-image-300" alt="Regresión lineal con cuadrantes blancos y rosados. Qué hacen los cuadrantes allí?" src="http://aniversarioperu.files.wordpress.com/2013/10/plot_19.png" width="607" height="508" /></a> Regresión lineal con cuadrantes blancos y rosados. Qué hacen los cuadrantes allí?[/caption]
+
+Los datos están en la Tabla 4 del informe (página 37). Bajé los datos, hice el plot y calculé el coeficiente de determinación y el valor del p-value para ver si hay o no hay correlación entre las variables gasto y nivel de pobreza.
+
+[caption id="attachment_303" align="aligncenter" width="593"]<a href="http://aniversarioperu.files.wordpress.com/2013/10/plot_19_reloaded1.png"><img class="size-full wp-image-303" alt="Gráfico sin los cuadrantes que estorban." src="http://aniversarioperu.files.wordpress.com/2013/10/plot_19_reloaded1.png" width="593" height="349" /></a> Gráfico sin los cuadrantes que estorban.[/caption]
+
+Y creo que ya te diste cuenta que NO hay relación entre las dos variables! Mira pé:
+
+<strong>R<sup>2</sup> = 0.02</strong> (si hubiera correlación este <strong>debería ser cercano a 1</strong>)
+<strong>p = 0.43</strong> (si hubiera correlación este <strong>debería ser menor que 0.05</strong>)
+
+El mismo error!
+
+Pero aquí viene lo penoso. <strong>Qué michi hacen esos cuadrantes en tu gráfico?</strong> Primera vez en mi vida que los veo en un análisis de regresión. Los cuadrantes se usan en <a href="http://131.95.113.139/courses/multivariate/CCA.pdf">análisis canónico! ca-no-nico</a>!
+
+Si quieres demostrar algo categóricamente debes aplicar las estadísticas relevantes y que sean las más simples. Si quieres comparar 2 variables, haces regresión lineal (o ajustas una distribución exponencial, logarítmica, etc). <strong>Si quieres explicar el comportamiento de tus datos según múltiples variables haces un análisis de correspondencia canónico o similar</strong>.
+
+No quiero pensar que estas tratanto de estirar los datos. Los desconfiados van a pensar que quieres estirar las estadísticas, forzándolas para que falsamente den soporte al resultado que quieres obtener. Debes tener cuidado chochera.
+
+Sobre todo, causa desconfianza cuando, de todos los puntos de tu gráfico, escoges algunos, los que te conviene usar para criticar Qali Warma. Esos son datos anecdóticos. Otro broder podría escoger solo los puntos que dan una conclusión contraria y discutir ampliamente que Qali Warma hace un excelente gasto del dinero.
+
+<strong>Para evitar esas subjetividades se hacen regresiones lineales</strong>, cálculos de coeficientes y tests de significancia (p-value). Cosa que tu informe aparenta hacer, pero no lo hace. <strong>Presentas tablas y gráficos pero haces <i>cherry picking</i> para la discusión!</strong> Además, <strong>ta que no he visto ninguna mención al R<sup>2</sup> o al <i>p-value</i></strong> en tu informe.
+
+<span style="color: #2b6fb6; font-size: 1.5em;">Sección geek</span>
+
 Aquí está los dos análisis estadísticos, el de ejemplo y el que rehice con los datos del informe del señor de la Universidad del Pacífico.
 
 https://gist.github.com/aniversarioperu/7083834
@@ -43,3 +75,7 @@ https://gist.github.com/aniversarioperu/7083834
 Aquí los datos originales usados en el reporte académico, tomado de su tabla 31.
 
 https://gist.github.com/aniversarioperu/7083865
+
+Aquí los datos originales de la tabla 4
+
+https://gist.github.com/aniversarioperu/7107980
