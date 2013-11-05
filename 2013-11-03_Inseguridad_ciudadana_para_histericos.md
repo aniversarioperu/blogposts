@@ -21,7 +21,7 @@ Estas estadísticas nos pueden ayudar a estimar en qué año aumentó la delincu
 Podemos estimar el rango de valores más probables que puede tener cada variable si es que usamos simulaciones de números aleatorios.
 
 <em>[Paréntesis]</em>
-Los estadísticos bayesianos conocen la probabilidad más alta de estos valores como <strong>probabilidad posterior</strong>. Por ejemplo, cuando tú amig@ lector(a) recibes un email (digamos de Gmail), la empresa Google tiene un software que aplica estadísticas bayesianas al contenido del mensaje. Lo que hace es buscar palabras clave que indiquen que el email recibido es spam. La probabilidad inicial que un mensaje sea Spam puede ser 0.5 (osea 50%), pero si el contenido tiene las palabras "viagra", "penis", "enlargement". Existirá una mayor probabilidad posterior que este correo es spam, (<strong>a esta probabilidad se le llama probabilidad posterior</strong>), y el software de Google lo enviará directamente a la carpeta Junk. Por eso las estadísticas bayesianas son importantes, y además las usas a diario sin darte cuenta.
+Los estadísticos bayesianos conocen la probabilidad más alta de estos valores como <strong>probabilidad posterior</strong>. Por ejemplo, cuando tú amig@ lector(a) recibes un email (digamos de Gmail), la empresa Google tiene un software que aplica estadísticas bayesianas al contenido del mensaje. Lo que hace es buscar palabras clave que indiquen que el email recibido es spam. La probabilidad inicial que un mensaje sea Spam puede ser 0.5 (osea 50%), pero si el contenido tiene las palabras "viagra", "penis", "enlargement". Existirá una mayor probabilidad que este correo es spam, (<strong>a esta probabilidad se le llama probabilidad posterior</strong> ya que se obtiene luego de examinar la evidencia), y el software de Google lo enviará directamente a la carpeta Junk. Por eso las estadísticas bayesianas son importantes, y además las usas a diario sin darte cuenta.
 <em>[/Paréntesis]</em>
 
 Volviendo a nuestro problema, necesitamos ver cuáles son las probabilidades posteriores de nuestros datos de número de delitos a nivel nacional. Felizmente, el lenguaje de programación Python tiene una librería muy chévere para hacer estadísticas bayesianas. Es el paquete <strong>pymc</strong>. Entonces solo es cuestion de simular muchas veces los valores de números totales de delito antes y después del incremento, y el año de incremento en la tasa delincuencial (osea $latex \lambda_1, \lambda_2,$ y <em>tau</em>).
@@ -44,8 +44,11 @@ Ahora, pregunto <strong>qué acontecimiento ocurrió entre 2010 y 2011 que fue e
 
 
 <h1>Sección geek</h1>
+Aquí los datos que he usado:
 
-Aquí está el código para hacer la regresión lineal en R:
+https://gist.github.com/aniversarioperu/7308937
+
+Auí está el código para hacer la regresión lineal en R:
 
 https://gist.github.com/aniversarioperu/7292990
 
