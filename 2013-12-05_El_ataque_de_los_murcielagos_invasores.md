@@ -50,7 +50,7 @@ murciélagos fueran vampiros, no estarían siendo atraídas por las frutas. En e
 Facebook, el biólogo Richard Cadenillas dice que lo que está viendo *"son
 manchas de las heces, esa es la forma en que las semillas son dispersadas"*.
 
-![Richard Cadenillas](richard_cadenillas.png)
+![Richard Cadenillas](images/richard_cadenillas.png)
 
 Fijése bien en esas manchas, es probable que encuentre bolitas pequeñas que
 resulten ser semillas.
