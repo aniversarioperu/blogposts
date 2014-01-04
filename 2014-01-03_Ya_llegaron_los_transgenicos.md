@@ -1,7 +1,8 @@
 Veo en el tuiter que hay algo de pánico en la población al descubrirse que, sin
 saberlo, estamos consumiendo alimentos transgénicos. Horrible oye!
 
-Esta es la lista proporcionada via tuiter por @suriel:
+Esta es la lista proporcionada via tuiter por
+[@suriel]((https://twitter.com/suriel):
 
 ![alimentos transgénicos](images/alimentos_transgenicos.png)
 
@@ -85,8 +86,8 @@ Tangüis.
 Acuérdate que en los años 1910-1911 los algodoneros estaban tristes porque una
 plaga de hongos atacaba y mataba a las plantas de algodón. Fermín Tangüis
 experimentó **haciendo cruces entre diferentes especies de algodón** para
-obtener un mutante intermedio que sea inmune a la plaga. Para esto hizo un
-cruce entre una especie de algodón Egipcio y el algodón peruano y tuvo éxito.
+obtener un mutante intermedio que sea inmune a la plaga. Para esto hizo **un
+cruce entre una especie de algodón Egipcio y el algodón peruano y tuvo éxito**.
 Obtuvo el algodon Tangüis, tan preciado por los hipsters de la época.
 
 ![Fermín Tangüis, haciendo transgénicos since 1911](images/fermin_tanguis.jpg)
@@ -97,15 +98,29 @@ que **el rico sillao se hace de soya transgénica**.
 
 También debes dejar de comer plátano, de la isla, de seda, son malos. También
 han sido genéticamente modificados. Estas plantas son tan aberrantes que tienen
-sus semillas totalemente atrofiadas y no pueden reproducirse normalmente. Solo
+sus semillas totalmente atrofiadas y no pueden reproducirse normalmente. Solo
 se reproducen por clonación.
 Te reto a que comas el plátano original, sin manipulación genética. Pero
 cuidado que se vaya romper tu amalgama al morder las semillas que sí son funcionales.
 
 ![plátano silvestre, no transgénico](images/platano.jpg)
 
+El amigo [@_BryanLucero](https://twitter.com/_BryanLucero) me recuerda que **en
+un sentido amplio todos los organismos somos genéticamente modificados**. Pero
+aquellos que están en discusión y son **controversiales son los organismos
+transgénicos producidos por técnicas modernas como la biotecnología e
+ingeniería genética**.
+
+Pero #amigoDateCuenta que un transgénico será transgénico así se haya creado
+con última tecnología o con métodos tradicionales como cruces y selección
+artificial. Además que la naturaleza está generando por sí sola transgénicos
+todos los días! Por ejemplo sabías que 
+[naturalmente
+ha habido transferencia de genes entre vacas y
+serpientes](http://phenomena.nationalgeographic.com/2013/01/01/how-a-quarter-of-the-cow-genome-came-from-snakes/).
+
 # Son los transgénicos necesariamente malos?
-Te dejo un par de ejemplos para que tú decidas.
+Te dejo un ejemplo para que tú decidas.
 
 Uno de los problemas graves de los niños pobres de cierta parte del Asia y
 África es que no
