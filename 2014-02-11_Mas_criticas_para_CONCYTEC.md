@@ -70,7 +70,7 @@ auxiliares o los profesores principales con más de 20 años de
 experiencia docente y de investigación? Supongo que estas becas deben ir
 hacia lo mejor de lo mejor que tiene cada facultad y basta ver la [lista
 de investigadores
-detacados](http://www.unmsm.edu.pe/coop/contenidobd1a.html?pag1=27) por
+destacados](http://www.unmsm.edu.pe/coop/contenidobd1a.html?pag1=27) por
 áreas que ha publicado la **Oficina General de Cooperación y Relaciones
 interinstitucionales** (de la UNMSM) para saber quienes son los capos de
 cada facultad. 
