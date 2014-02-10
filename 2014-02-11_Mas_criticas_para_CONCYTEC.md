@@ -2,12 +2,15 @@ En un post anterior opiné que me parecía criticable que se limite la
 postulación de jóvenes a becas de mastría y doctorado en base a edad. Es
 lamentable ver que jóvenes con potencial no puedan postular por haber
 nacido, por ejemplo, con un mes de anticipación. Si te demorabas 1
-mesesito más en el vientre de tu madre la hacías linda... El proyecto
-original sobre la obtención de becas doctorales fue elaborado en
-colaboración por la PCM y CONCYTEC y **no estipulaba nigún límite de
-edad**. Pero el documento que fue finalmente aprobado es igualito, con
-una excepción. Se incluye el límite de 35 años para los postulantes.
-Quiénes insertaron este parrafito allí en la sección **Condiciones de
+mesesito más en el vientre de tu madre la hacías linda...
+
+El proyecto original sobre la obtención de becas doctorales fue
+elaborado en colaboración por la PCM y CONCYTEC y **no estipulaba nigún
+límite de edad**.
+
+Pero el documento que fue finalmente aprobado es igualito, con una
+excepción. Se incluye el límite de 35 años para los postulantes. Quiénes
+insertaron este parrafito allí en la sección **Condiciones de
 Financiamiento**?
 
 ![Bases para las becas, antes y despúes (click para ampliar)](images/concy3.png)
@@ -26,8 +29,10 @@ Más malas noticias
 
 Pero los límites de edad que pone CONCYTEC también afecta a los
 investigadores curtidos y experimentados que ya tienen doctorado y
-post-doctorado. CONCYTEC tiene un reciente programa de financiamiento
-llamado [**Científicos
+post-doctorado.
+
+CONCYTEC tiene un reciente programa de financiamiento llamado
+[**Científicos
 INC**](http://portal.concytec.gob.pe/index.php/fondecyt-becas/cienciactiva/cientificos-inc-subvenciones-para-formacion-de-circulos-de-investigacion-en-ciencia-y-tecnologia.html).
 Este programa es espectacular ya que:
 
@@ -46,40 +51,47 @@ Por eso los proyectos son:
 
 Por fin los profesores universitarios (los cuales son la principal masa
 de científicos que tiene el Perú) pueden tener financiamiento decente.
-Apliquen todos! Pero (déjà vu) hay un pequeño detalle. CONCYTEC pone
-como [límite 45
+Apliquen todos!
+
+Pero (déjà vu) hay un pequeño detalle. CONCYTEC pone como [límite 45
 años](http://portal.concytec.gob.pe/index.php/cienfitificos-inc-proceso-de-seleccion.html)
 a los investigadores que pueden aplicar a este programa de
 financiamiento. Si eres un investigador con experiencia, publicaciones y
 reconocido en tu campo, pero tienes 46 años o más, piña no puedes
-postular y ni sueñes ser un **Científico Inc.** 
+postular y ni sueñes ser un **Científico Inc.**
 
 ![Límite de edad para financiamiento de Científicos INC](images/concy1.png)
 
-Este límite de edad es discriminatorio (se selecciona excluyendo, [fuente:
-RAE](http://buscon.rae.es/drae/srv/search?val=discriminar)). Pero lo que
-me cuesta entender es por qué se selecciona en base a la edad. Sobre
-todo por qué poner el límite tan bajo de 45 tiernos años. Meritocracia
-te necesitamos ya! Pregunto si CONCYTEC sabe quiénes son los que tienen
-mayor producción científica en las facultades? Los que publican la mayor
-cantidad de artículos científicos **no son los más chibolos** de la
-plana docente. Tú amiguito que estas estudiando una carrera científica a
-nivel de pregrado, detente un rato y mira tus profes. Quiénes son los
-que producen más ciencia? Los jefes de práctica? Los profesores
-auxiliares o los profesores principales con más de 20 años de
-experiencia docente y de investigación? Supongo que estas becas deben ir
-hacia lo mejor de lo mejor que tiene cada facultad y basta ver la [lista
-de investigadores
+Este límite de edad es discriminatorio (se selecciona excluyendo,
+[fuente: RAE](http://buscon.rae.es/drae/srv/search?val=discriminar)).
+Pero lo que me cuesta entender es por qué se selecciona en base a la
+edad. Sobre todo por qué poner el límite tan bajo de 45 tiernos años.
+Meritocracia te necesitamos ya!
+
+Pregunto si CONCYTEC sabe quiénes son los que tienen mayor producción
+científica en las facultades? Los que publican la mayor cantidad de
+artículos científicos **no son los más chibolos** de la plana docente.
+
+Tú amiguito que estas estudiando una carrera científica a nivel de
+pregrado, detente un rato y mira tus profes. Quiénes son los que
+producen más ciencia? Los jefes de práctica? Los profesores auxiliares o
+los profesores principales con más de 20 años de experiencia docente y
+de investigación?
+
+Supongo que estas becas deben ir hacia lo mejor de lo mejor que tiene
+cada facultad y basta ver la [lista de investigadores
 destacados](http://www.unmsm.edu.pe/coop/contenidobd1a.html?pag1=27) por
 áreas que ha publicado la **Oficina General de Cooperación y Relaciones
 interinstitucionales** (de la UNMSM) para saber quienes son los capos de
-cada facultad. 
+cada facultad.
 
 ![INVESTIGADORES DESTACADOS POR AREAS. Fuente UNMSM.](images/concy2.png)
 
-Yo siendo biólogo conozco a todos los que figuran en la sección **Biología y
-Biodiversidad**. Todos ellos han sido mis profes, y **NINGUNO tiene
-menos de 45 años!** La media de edades debe ser estar entre 55 y 60.
+Yo siendo biólogo conozco a todos los que figuran en la sección
+**Biología y Biodiversidad**. Todos ellos han sido mis profes, y
+**NINGUNO tiene menos de 45 años!** La media de edades debe ser estar
+entre 55 y 60.
+
 Parece contradictorio que por un lado se quiera fomentar ciencia de alto
 nivel pero se deje de lado a los que están más calificados.
 
@@ -96,16 +108,48 @@ proyecto de CONCYTEC me parece bien pensado porque:
 > institución participante**, quienes desarrollarán investigaciones en
 > determinadas áreas del proyecto durante tres años.
 
+Pero tal como lo dice el lector *Subaru Impreza* en un comentario. Las
+bases del financiamiento sí permite que el responsable de toda la
+investigación sea mayor de 45 años. Pero la información publicada en la
+página web del CONCYTEC dice que los investigadores deben ser de 45 años
+como máximo (entiéndase por todos los investigadores?).
+
 En esas condiciones tranquilamente pueden acomodar al profe más capo de
 todos como investigador principal e incluir a cuadros jóvenes como
 investigadores colaboradores. **Así funciona la ciencia en todo el
 mundo**. Juntas al científico experimentado con los científicos novatos
 en un mismo proyecto para que los jóvenes ganen experiencia y sean bien
 guiados. Es por eso que cuando haces tu tesis debes tener
-obligatoriamente un asesor experimentado. Pero tal como está la
-situación, los profesores tendrán que pensar en jubilarse a los 46 años?
-De allí solo dedicarse a la docencia? No entiendo. 
+obligatoriamente un asesor experimentado.
 
-Creo que algunos
-futbolistas tienen carreras profesionales más largas y se retiran a los
-58 años como el Chorrillano Palacios por ejemplo (no te vayas Chorri!).
+Pero, uno de los problemas es que el resto de investigadores asociados
+al proyecto no pueden ser mayores de 45 años.
+
+> -   No menos de dos investigadores por institución participante,
+>     quienes deberán ser menores de 45 años y desarrollarán
+>     investigaciones en determinadas áreas durante tres años.
+> -   Otros investigadores, así como estudiantes de doctorado, maestría
+>     y pregrado quienes deberan ser menores de 45 años....
+
+Pero si los estudiantes de doctorado tenían como tope 35 años, ahora el
+tope es 45 años?
+
+También puede participar un equipo de investigación conformado por
+investigadores de trayectoria. Pero no se especifica la edad. También
+menores de 45 años como dice la página web?
+
+Tal como está la situación, solo un profesor mayor de 45 años de cada
+universidad tendrá la suerte participar en el proyecto. Y el resto de
+investigadores destacados de la lista publicada por la UNMSM? Tendrán
+que pensar en jubilarse a los 46 años? De allí solo dedicarse a la
+docencia? No entiendo.
+
+Creo que algunos futbolistas tienen carreras profesionales más largas y
+se retiran a los 58 años como el Chorrillano Palacios por ejemplo (no te
+vayas Chorri!).
+
+Espero que se entienda que estas críticas se basan en un deseo que se
+distribuya bien el dinero disponible para financiación. Para que la
+ciencia en el Perú despegue de una vez y nos beneficiemos todos los
+peruanos con los resultados de la inversión que hace el Estado en sus
+científicos.
