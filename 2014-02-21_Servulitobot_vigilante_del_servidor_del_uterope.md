@@ -42,7 +42,7 @@ queríamos.
 Aquí uno de los mensajes de texto a modo de prueba que
 [@ServulitoBot](https://twitter.com/ServulitoBot) envió al celular de Miguel:
 
-![](images/servulitobot2.png)
+![](images/servulito_bot2.png)
 
 [@ServulitoBot](https://twitter.com/ServulitoBot) tiene su cuenta de tuiter,
 está escrito en el lenguaje de programación Python y hace uso de las interfases
