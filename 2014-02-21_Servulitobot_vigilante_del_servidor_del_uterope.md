@@ -52,7 +52,7 @@ API de Twitter y Plivo (el servicio de SMS).
 uterope y estará cumpliendo servicios desde el día de hoy.
 
 Pero tú también puedes tener tu propio clon de @ServulitoBot! Este bot es 
-[*open access*](http://en.wikipedia.org/wiki/Open_access) y está **disponible sin
+[*open source*](http://en.wikipedia.org/wiki/Open-source_software) y está **disponible sin
 costo alguno para todos ustedes** desde esta dirección web
 <https://github.com/aniversarioperu/servulitobot>.
 
