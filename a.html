@@ -1,0 +1,43 @@
+En un post reciente, mi enemixer Miguel Guerra les había advertido de <a href="http://hack.utero.pe/2014/02/03/un-usuario-de-twitter-podria-ser-victima-de-acoso/">los peligros de tener la opción de georeferenciado activada en sus cuentas de tuiter</a>.
+
+Miguel nos contó que un usuario maligno puede utilizar herramientas disponibles en la web para hacer barridos de la ciudad buscando usuarios cercanos. Estos usuarios podrían estar retirando dinero de un cajero, saliendo de una discoteca, siendo potenciales presas fáciles de un malechor.
+
+Miguel recomendó desactivar la opción de geolocalización a tu cuenta de tuiter para que evites riesgos innecesarios. Algunos amigos lectores se asustaron ante tal revelación y han seguido la recomendación de Miguel.
+
+Otros amixers aún tienen activada esta opción en sus cuentas de tuiter. Parece que no se han asustado tanto. Bueno, en este post trataré de asustarte un poquito más.
+
+Usando las coordenadas geográficas de cada tuit, he hecho un reglaje a un tuitero famoso.
+<h1>Metodología</h1>
+He escrito un pequeño programita en el lenguaje Python que utiliza la interfase de Twitter conocida por los nerds como API versión 1.1. En palabras simples mi programita hace lo siguiente:
+<ul>
+	<li>Recibe la orden de buscar tuits georeferenciados de un usuario en particular.</li>
+	<li>Se comunica con Twitter, y pide los 3200 tuits más recientes.</li>
+	<li>Para cada tuit, extrae las coordenadas latitud y longitud.</li>
+	<li>También extrae la fecha y hora en que fue emitido cada tuit.</li>
+	<li>Estos datos son almacenados en un archivo en la computadora local.</li>
+</ul>
+Una vez con los datos listos, puse todos los puntos sobre un mapa usando Google Maps.
+<h1>Resultado</h1>
+Aterrador. Esta es una captura de pantalla, pero si haces click a la imagen puedes ir a la versión interactiva de este Google Map.
+
+[caption id="attachment_18583" align="aligncenter" width="442"]<a href="http://aniversarioperu.me/reglaje_a_famoso/"><img class=" wp-image-18583   " alt="Captura de pantalla. Hacer click para ir a la versión interactiva." src="http://img.uterodemarita.com.s3.amazonaws.com/wp-content/uploads/2014/02/a.png" width="442" height="391" /></a> Captura de pantalla. Hacer click a la imagen para ir a la versión interactiva.[/caption]
+
+Como puedes ver, en este mapa figuran todos los movimientos de este usuario. Al parecer esta persona tuitea de todos lados de Lima y siempre anuncia su ubicación geográfica. Ya que este este un <em>heatmap</em>, se puede apreciar rápidamente cuáles son los lugares favoritos de este ciudadano. Obviamente que uno de ellos es su casa y el otro es su lugar de trabajo.
+
+Puedes ver que este ciudadano también <strong>visita mucho San Isidro, debe ser empresario</strong>. También <strong>visita el aeropuerto Jorge Chávez, debe ser empresario con plata</strong>. También visita a menudo el Cerro San Cosme, <strong>debe hacer labor social ya que, como hemos especulado, tiene plata</strong>.
+
+Ojo, que este mapa ha sido generado usando solo las coordenadas geográficas de tus tuits. Pero<strong> también tengo las fechas y horas</strong>. Es posible saber mas o menos qué días y a qué horas estás en el Cerro San Cosme. Se puede saber qué días viajas (supongo que son los fines de semana ya que al parecer trabajas en el centro de Lima).
+
+Si eres empresario con plata, debes tener cuidado y desactivar la opción de geolocalización de una vez! Es más, <strong>debes borrar todos tus tuits pasados!</strong> Para un marca es muy fácil tenderte una emboscada con toooooda la información personal que alegremente haces pública.
+
+<strong>No es necesario que hagas "Check-in" en Foursquare para que tus tuits anuncien tu ubicación geográfica</strong>. Fíjate en el timeline de tu cuenta y tus amixers, si ves un ícono parecido a este, ya fuiste, eres vulnerable a que te hagan reglaje:
+
+[caption id="attachment_18699" align="aligncenter" width="594"]<a href="http://img.uterodemarita.com.s3.amazonaws.com/wp-content/uploads/2014/02/a1.png"><img class="size-full wp-image-18699" alt="Tuit conteniendo coordenadas geográficas (te das cuenta por el ícono)" src="http://img.uterodemarita.com.s3.amazonaws.com/wp-content/uploads/2014/02/a1.png" width="594" height="207" /></a> Tuit conteniendo coordenadas geográficas (te das cuenta por el ícono)[/caption]
+
+<strong>Por razones obvias no voy a revelar la identidad de este usuario. Pero si estas leyendo, ya tu sabes que se trata de ti</strong>.
+
+Para finalizar, creo que no tiene mucho sentido que publique el código de programación que he usado para colectar estos datos ya que cualquier hacker ético y no ético puede repetir este ejercicio en un par de horas y empezar a hacer reglajes por doquier.
+
+P.S. Este post no tiene como función dar ideas a los marcas. El objetivo es hacerte recapacitar y convencerte que no es bueno que hagas pública tu información personal. Todo es por tu bien.
+
+atte. Tu amigo, AniversarioPeru.

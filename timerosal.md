@@ -1,16 +1,112 @@
 El amixer [José Pinilla](https://twitter.com/jose_pinilla) me pasa un dato que me ha hecho renegar.
 Resulta que [Pedro Pablo Kuczynski está en contra del timerosal](http://peru21.pe/impresa/villaran-tiene-que-cambiar-su-equipo-2115487):
+En una entrevista al diario Peru21, PPK dice:
 
-> Hay un proyecto de la Nueva Ley de Inmunizaciones, pero una parte importante es eliminar el timerosal, que es un tipo de mercurio que se pone en las vacunas multidosis, como preservante. En EE.UU. y en muchos otros sitios se ha prohibido este material porque tiene, potencialmente, consecuencias muy malas. Es un tema que debe verse con prioridad”.
+> Hay un proyecto de la Nueva Ley de Inmunizaciones, pero una parte importante
+es eliminar el timerosal, que es un tipo de mercurio que se pone en las vacunas
+multidosis, como preservante. En EE.UU. y en muchos otros sitios se ha
+prohibido este material porque tiene, potencialmente, consecuencias muy malas.
+Es un tema que debe verse con prioridad.
 
-La excongresista Rosario Sasieta presentó un proyecto de ley para que el Ministerio de Salud elimine todas las vacunas que contengan timerosal. El proyecto fue discutido y [choteado](www2.congreso.gob.pe/Sicr/ApoyComisiones/dictamen20062011.nsf/168083C79D3AB65F052572C10076C8C8/%24FILE/390_SALUD_2007_VALE.pdf) [PDF] por la Comisión de Salud del Congreso en el año 2006. La comisión pidió opinión a:
+# Qué es timerosal y por qué se usa en las vacunas?
+El timerosal es un compuesto que tiene propiedades antibacterianas y
+antihongos. Se usa como preservante en vacunas, antídotos contra venenos, tinta
+para tatuajes, etc. Se comenzó a usar
+debido a que las vacunas sin este compuesto habían sufrido contaminación
+vacteriana y muchos niños murieron al recibir estas vacunas contaminadas con
+Staphilococus.
 
-* INDECOPI (estuvo a favor de eliminar vacunas con timerosal)
-* Ministerio de Energía y Minas, quien dijo que el mercurio en medicinas no es de su competencia.
-* El Colegio Médico del Perú dijo que no hay relación entre enfermedades y uso de timerosal. Dijo que no le hagan caso a la ex-congresista Sasieta.
+# Solo PPK está en contra de vacunas con timerosal?
+Durante su época de congresista, la abogada Rosario Sasieta presentó un
+proyecto de ley para que el Ministerio de Salud elimine todas las vacunas que
+contengan timerosal. El proyecto fue discutido y
+[choteado](www2.congreso.gob.pe/Sicr/ApoyComisiones/dictamen20062011.nsf/168083C79D3AB65F052572C10076C8C8/%24FILE/390_SALUD_2007_VALE.pdf)
+[PDF] por la Comisión de Salud del Congreso en el año 2006. La comisión
+pidió opinión a:
 
-La comisión hizo un detallado análisis de la evidencia y criticó que el proyecto de ley de Rosario Sasieta no haga diferencia entre el etilmercurio y el metilmercurio. La comisión dice que esta distinción es importante porque **el metilmercurio sí es neurotóxico**.
+* **INDECOPI** (estuvo a favor de eliminar vacunas con timerosal)
+* **Ministerio de Energía** y Minas, quien dijo "para qué me preguntas si el
+  mercurio en medicinas y alimentos no es mi competencia".
+* El **Colegio Médico del Perú** dijo que no hay relación entre enfermedades y uso de timerosal. Dijo que no le hagan caso a la ex-congresista Sasieta.
 
+La comisión hizo un detallado análisis de la evidencia y criticó que el
+proyecto de ley de Rosario Sasieta no haga diferencia entre el etilmercurio y
+el metilmercurio. La comisión dice que esta distinción es importante porque
+**el metilmercurio sí es neurotóxico**, mientras que el **etilmercurio** no
+hace daño.
+
+
+### etil? metil?
+Resulta que en la química orgánica hay unos compuestos conocidos como grupos
+funcionales, entre los cuales hay moléculas compuestas por átomos de Carbono e
+Hidrógeno. El nombre de estos grupos se deriva de la cantidad de átomos de
+Carbono que tenga:
+
+* grupo metilo : un carbono
+* grupo etilo : dos carbonos
+* grupo propilo : tres carbonos
+* grupo butilo: etc
+* etc : etc
+
+Yo envidio a los químicos, no solamente ganan dinero fabricanto *meth* si
+no que también pueden decir **metilo, etilo, propilo** sin ser políticamente
+incorrectos. Si yo fuera químico me la pasaría todo el día diciendo **metilo,
+etilo, propilo**.
+
+# Qué son el metil- y etilmercurio?
+El proyecto de Rosario Sasieta manifiesta que se debe evitar el uso de mercurio
+en vacunas:
+
+> se propone prohibir el uso... de productos que contengan mercurio, por cuanto
+es causal de múltiples enfermedades ... que daña el sistema nervioso en forma
+termporal o definitiva...
+
+El mercurio (de símbolo Hg) puede estar en diversas formas en la naturaleza. Si
+a un átomo de mercurio se le ha pegado uno de carbono con tres hidrógenos se
+dice que tiene un **grupo metilo**. Y a este compuesto se le llama
+**[metilmercurio](http://en.wikipedia.org/wiki/Methylmercury). El metilmercurio
+es altamente dañino y neurotóxico**. [Este metilmercurio es el que usan los
+mineros informales para buscar oro en la
+Amazonía](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1566671/) y es el que
+contamina los ríos, se bioacumula en los peces y afecta las poblaciones humanas
+(ejemplo 
+[Puerto Maldonado](http://elcomercio.pe/peru/lima/indigenas-son-mas-perjudicados-mercurio-mineria-ilegal_1-noticia-1628498)).
+
+Otra presentación del mercurio es el conocido como [etilmercurio](http://en.wikipedia.org/wiki/Ethylmercury). Este compuesto tiene un átomo de mercurio unido a un grupo etilo. Ya tu sabes que los grupos etilo están compuestos por dos átomos de carbono más cinco de hidrógeno.
+
+El etilmercurio se le conoce como la forma orgánica del mercurio, no se acumula en el cuerpo y se disipa rápido y [elimina en las heces](http://en.wikipedia.org/wiki/Ethylmercury).
+
+## Qué tiene que ver el etilmercurio con el timerosal
+Cuando te vacunaron, el timerosal que estaba incluido en la vacuna ingresó a tu
+cuerpo y sufrió metabolización y degradación para quedar convertido en
+**etilmercurio**. La forma inocua del mercurio.
+
+Hay que temerle al metilmercurio pero no al etilmercurio, pero no hay que
+confundir los dos compuestos ya que no son lo mismo a pesar de tener átomos de
+mercurio, carbono e hidrógeno. Son muy diferentes a pesar de sonar parecido.
+
+El etilmercurio no hace daño, el que hace mucho daño es el metilmercurio.
+
+Es algo así como los alcoholes. Cuando estuviste en la fiesta semáforo del
+utero tomaste bastante alcohol etílico sin que no tengas mayor molestia que un
+dolor de cabeza al día siguiente. Pero si tomas bebidas adulteradas por la tía
+veneno, y contiene alcohol metílico puedes terminar con ceguera, daño cerebral,
+hepático, coma y muerte (ver noticia [Un rockero, la nueva víctima mortal del alcohol
+metílico](http://peru21.pe/noticia/433779/rockero-nueva-victima-mortal-alcohol-metilico)).
+
+Manyas, alcohol con grupo etilo es bueno, alcohol con grupo **M**etilo es
+**M**alazo. El mercurio con grupo **M**etilo también es **M**alazo.
+
+El mercurio que hace daño es ese que usan los mineros informales en búsqueda de
+oro, es aquel que ha causado muchos desastres en el Perú y otros lugares. Es el
+metilmercurio.
+
+El metilmercurio es tan dañino por tener un grupo "metilo". Debes tener cuidado
+con los metilos. El grupo etilo no hace daño.
+
+Cuando oigas que alguien habla de la contaminación por mercurio, le haces incapié que se trata del mercurio que tiene el grupo metilo. Cuando PPK diga que el mercurio de las vacunas hace daño a los niños debes recordar que está confundiendo el etilo con el metilo.
+
+Entonces ya tu sabes, cuanto te vengan con el cuento que el mercurio de las vacunas hace daño tu dices "ay no me hagas reir que aholita metilo..."
 Citan el ejemplo de Dinamarca que a pesar de retirar el timerosal de las vacunas, siguieron apareciendo niños con autismo.
 
 También invitaron a sustentar opiniones a los médicos Luis Maya y Herminio Hernández. El Dr. Maya se opone al timerosal porque dijo haber numerosos estudios demostrando una relación entre el timerosal y autismo. El Dr. Hernández dijo que hay numerosos estudios que demuestran lo contrario (**que no hay relación entre el uso de timerosal y aumento de casos de autismo**).
@@ -33,27 +129,6 @@ Lo pueden leer de este link. Lamentablemente confunde dos cosas totalmente difer
 
 El Dr. Maya está confundiendo el mercurio de las vacunas con el mercurio de la contaminación ambiental. **Serán mercurio pero son dos cosas totalmente distintas!** Uno es el etilmercurio y el otro es metilmercurio.
 
-## Me explico
-El mercurio (de símbolo Hg) puede estar en diversas formas en la naturaleza. Si a un átomo de mercurio se le ha pegado uno de carbono con tres hidrógenos se dice que tiene un **grupo metilo**. Y a este compuesto se le llama **[metilmercurio](http://en.wikipedia.org/wiki/Methylmercury). El metilmercurio es altamente dañino y neurotóxico**. [Este metilmerucurio es el que usan los mineros informales para buscar oro y la Amazonía](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1566671/) y es el que contamina los ríos, se bioacumula en los peces y afecta las poblaciones humanas (ejemplo [Puerto Maldonado](http://elcomercio.pe/peru/lima/indigenas-son-mas-perjudicados-mercurio-mineria-ilegal_1-noticia-1628498)).
-
-Otra presentación del mercurio es el conocido como [etilmercurio](http://en.wikipedia.org/wiki/Ethylmercury). Este compuesto tiene un átomo de mercurio unido a un grupo etilo. Ya tu sabes que los grupos etilo están compuestos por dos átomos de carbono más cinco de hidrógeno.
-
-El etilmercurio se le conoce como la forma orgánica del mercurio, no se acumula en el cuerpo y se disipa rápido y [elimina en las heces](http://en.wikipedia.org/wiki/Ethylmercury).
-
-## Qué tiene que ver el etilmercurio con el timerosal
-Es que cuando el timerosal ingresó a tu cuerpo cuando te vacunaron, se metabolizó y degradó para convertirse en **etilmercurio**. La forma buena del mercurio.
-
-Timerosal consiste en etilmercurio, el cuál es el hermanito bueno de los estados del mercurio. El hermanito malo es el metilmercurio. Aunque suenen parecido son muuuuuuy diferentes. El etilmercurio no hace daño, el que hace mucho daño es el metilmercurio.
-
-Es algo así como los alcoholes. Cuando vas a tonear tomas bastante alcohol etílico sin que no tengas mayor molestia que un dolor de cabeza al día siguiente. Pero si tomas alcohol metílico puedes terminar con ceguera, daño cerebral, hepático, coma y muerte (ver noticia [Un rockero, la nueva víctima mortal del alcohol metílico](http://peru21.pe/noticia/433779/rockero-nueva-victima-mortal-alcohol-metilico)).
-
-El mercurio que hace daño es ese que usan los mineros informales en búsqueda de oro, es aquel que ha causado muchos desastres en el Perú y otros lugares. Es el metilmercurio.
-
-El metilmercurio es tan dañino por tener un grupo "metilo". Debes tener cuidado con los metilos. El grupo etilo no hace daño.
-
-Cuando oigas que alguien habla de la contaminación por mercurio, le haces incapié que se trata del mercurio que tiene el grupo metilo. Cuando PPK diga que el mercurio de las vacunas hace daño a los niños debes recordar que está confundiendo el etilo con el metilo.
-
-Entonces ya tu sabes, cuanto te vengan con el cuento que el mercurio de las vacunas hace daño tu dices "ay no me hagas reir que aholita metilo..."
 
 # a favor:
 
