@@ -60,7 +60,7 @@ Estos murciélagos comen fruta, entonces es probable que el conejito murió por
 otras causas. Talvez del susto de ver pasar a un murciélago?
 
 * *Entonces estos murciélagos no hacen daño?*  
-Los murciélagos que comen árboles frutales sirven como dispersores de semillaṣ.
+Los murciélagos que comen árboles frutales sirven como dispersores de semillas.
 Ya que el árbol frutal no puede dispersar sus semillas por sí mismo, recibe
 ayuda del murciélago. Los murciélagos insectívoros eliminan plagas y moscas.
 Los nectarívoros se encargan de polinizar plantas. Mirar en Wikipedia, la
@@ -81,15 +81,13 @@ Usted ha visto un murciélago con detenimiento? Aquí te dejo un galería de
 murciélagos. Si luego de verla sigues diciendo que son feos, te voy a regalar
 un espejo esta navidad para que sepas lo que es ser feo.
 
-![bebés del flying fox http://bit.ly/IJvcz0](murcielago1.jpg)
+![bebés del flying fox http://bit.ly/IJvcz0](images/murcielago1.jpg)
 
+![murciélagos hondureños http://bit.ly/IJvp55](images/murcielago2.jpg)
 
+![murciélagos hondureños http://bit.ly/IJvp55](images/murcielago3.jpg)
 
-![murciélagos hondureños http://bit.ly/IJvp55](murcielago2.jpg)
-![murciélagos hondureños http://bit.ly/IJvp55](murcielago3.jpg)
-
-
-![foto de murciélago rotada 180 grados = funky dance http://bit.ly/IJvEgD](murcielago4.jpg)
+![foto de murciélago rotada 180 grados = funky dance http://bit.ly/IJvEgD](images/murcielago4.jpg)
 
 
 
