@@ -55,7 +55,16 @@ interesante.
 Se podría aplicar un buscador del tipo "fuzzy" que permita buscar variaciones
 de palabras.
 Es decir si quieres buscar "sentenciado" la base de datos te podrá buscar
-además por "sente**ciada**", "senten**ció**", "senten**ciados**", etc.
+además por "sente**ciada**", "senten**ció**", "senten**ciados**".
+ Se podría cruzar toda la información de sentenciados con la lista de candidatos a las próximas elecciones municipales y etc, etc, etc.
+
+En este útero hemos desarrollado herramientas que permiten buscar de manera
+fácil las personas que visitan las instalaciones de la Oficina de
+Contrataciones del Estado y del Ministerio de Vivienda
+("[Manolo](http://aniversarioperu.utero.pe/2014/03/08/manolo-buscador-de-lobistas/)"
+ y "[Manolo
+vivienda](http://aniversarioperu.utero.pe/2014/04/05/manolo-vivienda-buscador-de-visitas-al-ministerio-de-vivienda/)"). Todo esto gracias a que en esos casos fue posible descargar
+los datos de manera automatizada.
 
 "Liberar" datos públicos poniendo trabas como el CAPTCHA es el oxymoron de
 moda.
