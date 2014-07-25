@@ -52,7 +52,7 @@ para cada candidato: Nombre, Apellido, Foto, Lugar Nacimiento, Email, Estudios,
 Ya no es posible gracias a la reciente modificación al software del JNE.
 
 Pero! no todo está perdido. Tal como lo mencionó el amixer [\@royriojas](https://twitter.com/royriojas) en un
-comentario a mi post anterior, es posible utilizar JavaScript descargarse la
+comentario a mi post anterior, es posible utilizar JavaScript para descargarse la
 info.
 Esto es posible pero un poco más tedioso. Antes el script hacía un pedido al
 servidor del JNE por cada candidato. Ahora hay que hacer, por cada candidato,
