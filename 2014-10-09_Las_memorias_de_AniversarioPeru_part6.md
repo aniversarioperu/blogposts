@@ -11,12 +11,12 @@ Si no leíste, aquí están los episodios anteriores:
 ![Aprendiendo inglés.](images/2014-10-01-choque.jpg)
 
 # Punto de quiebre
-Es costumbre que en estos viajes con fines de colecta sean los científicos
-extranjeros los que costeen los gastos de la contraparte peruana. Se supone que
+Es costumbre que en los viajes con fines de colecta sean los científicos
+extranjeros quienes costeen los gastos de la contraparte peruana. Se supone que
 es una colaboración internacional entre dos países y es de esperarse que, en este
 caso, el estudiante peruano no tenga que gastar dinero durante la expedición.
 
-Una noche antes del viaje mientras metía hacía mi mochila le conté a mi madre
+Una noche antes del viaje mientras hacía mi mochila le conté a mi madre
 que al día siguiente me iba de expedición científica:
 
 - Amá, han venido unos gringos de USA y me van a llevar de viaje a Oxapampa. Me
@@ -29,7 +29,7 @@ camino a Oxapampa.
 
 Punto para mi madre. En esa época no había smartphones, no había Whatsapp ni
 Google Maps. Pero encontré una guía telefónica y arranqué los planos de Lima
-que estaban al final. Entonces con mapas y mochila lista ya me sentía listo y
+que estaban al final. Entonces con mapas y mochila lista ya me sentía 
 expedito para el viaje.
 
 Los gringos habían alquilado un auto Mazda para su travesía en el Perú profundo.
@@ -57,8 +57,8 @@ mapa y señalaría el camino a seguir):
 
 - *Mister, you in the back, me in the front*.
 
-Y así fue como partimos al Perú profundo. Íbamos tranquilos por lo que era la
-Avenida Grau (antes que construyeran la vía expresa Grau) 
+Y así fue como partimos al Perú profundo. Íbamos tranquilos, por lo que era la
+Avenida Grau (antes que construyeran la vía expresa Grau), 
 hasta que unos choferes de combis nos lisureaban y nos gritaban:
 
 - Por aquí no. Te van a poner multa. Fuera de acá oe.
@@ -68,14 +68,15 @@ circulando por el carril central que estaba destinado solo para el transporte
 público.
 Pasado mi roche temporal los gringos decidieron tanquear el auto en un grifo
 en plena Avenida Nicolás Ayllón.
-Mientras llenaban el combustible el gringo que iba atrás decidió estirar las
+Mientras llenaban el combustible el gringo que iba atrás decidió bajar para 
+estirar las
 piernas con su cámara Pentax colgando del cuello y aprovechar para tomar
 algunas fotos. Lo que más le impresionó fueron las jabas para fruta apiladas
 a manera de torres hasta una altura de tres o cuatro pisos.
 
 Yo examinaba los planos una y otra vez tratando de encontrar nuestra ubicación
 geográfica. De milagro logré guiarlos por el camino correcto y luego de un rato
-ya estábamos en la carretera Central.
+ya estábamos en la Carretera Central.
 
 El trayecto se hizo interesante una vez que pasamos Chosica. Avanzábamos unos
 kilómetros y hacíamos parada para colectar arañas y observar pajaritos. En cada
@@ -85,9 +86,10 @@ caían en las redes.
 Los gringos aprovechaban para repartir caramelos.
 
 Y así estábamos en el auto, avanzando y parando, hasta que a eso de las 4pm
-ya habíamos pasado San Mateo y comenzaba el camino empinado y supuestamente
-debería hacer algo de frío, por la altitud y por que ya estaba atardeciendo.
-Pero en el auto hacía calor, abrimos las ventanas y aún así hacía más calor. El
+ya habíamos pasado San Mateo y comenzaba el camino empinado. Se
+suponía que debería haber comenzado a hacer algo de frío, por la altitud
+y porque ya estaba atardeciendo.
+Pero en el auto hacía calor, bajamos las ventanas y aún así hacía más calor. El
 camino se hacía más empinado y hacía más calor. Los gringos se comenzaron a
 incomodar por el calor. Seguimos por un par de kilómetros más y el calor se
 hizo insoportable hasta que de pronto y sin previo aviso el auto murió.
@@ -122,8 +124,8 @@ Ya eran más de las 6pm, me subí al Toyota y avanzábamos despacito hasta que l
 cadena se rompió en Ticlio.
 Uno de los mineros
 tuvo que empeñar su DNI para que un kiosco le preste un perno grande con dos
-tuercas enormes. Ya con la cadena parchada seguimos avanzando pero ya un poco más
-rápido ya que pasando Ticlio el camino ya no es de subida.
+tuercas enormes. Ya con la cadena parchada seguimos avanzando pero ahora un
+poco más rápido ya que pasando Ticlio el camino ya no es de subida.
 
 Lo malo que ir de bajada era que el auto siendo remolcado agarraba velocidad, y
 siendo este un auto automático con el motor apagado, el freno hidráulico no
@@ -204,7 +206,7 @@ La Merced. Ofrecí pagar el precio que nos pidan siempre y cuando no sea un robo
 a mano armada. Pero nadie nos quería llevar.
 
 - En Tarma tomas otro colectivo chibolo.
-- Pero tenemos harto bulto. Vamos hasta La Merced. Habla, te pago precio.  
+- Pero tenemos harto bulto. Vamos hasta La Merced. Habla, te pago precio.
 - No voy. Hasta Tarma nomás.
 
 Ya me iba a dar por vencido cuando apareció un pata con su Toyota Station
@@ -214,7 +216,7 @@ Al toque aceptó ir hasta La Merced.
 
 Metimos todas las cajas de golosinas, mochilas, equipos, grupo electrógeno,
 gringos, etc, todos los bultos entraron con la justas en el auto.
-El viaje fue tranquilo y rápido, mucho más rápido para mi gusto. Este
+El viaje fue tranquilo y rápido, demasiado rápido para mi gusto. Este
 aventurero era un trome al volante. Se conocía todas las curvas de la
 carretera. Ya faltaba poco para llegar a La Merced cuando me dice:
 
@@ -255,9 +257,9 @@ aprender ese idioma. Sentí que mi cerebro había hecho un clic y ahora ya no
 tenía miedo ni roche en formar oraciones para conversar con los gringos.
 
 Creo que lo más importante de este viaje fue este punto de quiebre. 
-Sentí bastante satisfacción al haber hecho un gran avance para cumplir uno de
-los objetivos necesarios para llegar a la meta de conseguir una beca para
-estudiar el postgrado en el extranjero.
+Sentí bastante satisfacción al haber hecho un gran avance y estar en el 
+camino correcto para cumplir mi meta máxima de conseguir una beca para estudiar
+el postgrado en el extranjero.
 
 Continuará...
 
