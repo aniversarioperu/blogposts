@@ -1,4 +1,4 @@
-# Las memorias de AniversarioPerú - Parte 7
+# Las memorias de AniversarioPerú - Parte 8
 
 
 # Consiguiendo beca para un sueño
@@ -53,6 +53,10 @@ parecido a esto:
 
 > Dear Professor X,
   I am a peruvian student and would like to study PhD.
+
+> Sincerely yours,
+
+> Yoni Pacheco
 
 Al día siguiente, emocionado abrí mi cuenta de correo Hotmail y no pude creer
 mis ojos al ver que me habían respondido!
