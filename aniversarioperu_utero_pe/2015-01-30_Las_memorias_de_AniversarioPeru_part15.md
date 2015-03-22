@@ -20,7 +20,8 @@ Si no leíste, aquí están los episodios anteriores:
 
 
 # Haciendo el doctorado
-En esta facultad el programa de doctorado está orientado a la investigación
+En la facultad donde estudié, al igual que en otras universidades,
+el programa de doctorado está orientado a la investigación
 principalmente. Hay que llevar cursos, pero son pocos y de poca duración. Llevábamos
 dos o tres cursos por año y cada uno duraba una semana, si es que era a tiempo
 completo (6 horas diarias).
