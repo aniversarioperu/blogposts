@@ -134,3 +134,32 @@ pongo.
 Bueno la pongo de todas maneras:
 
 ![](images/2015-04-11_eudmed3.png)
+
+## Bonus track
+También hice nubes de palabras a partir de los tuits de otros trolls:
+
+### Utero.pe
+Pare que últimamente el utero.pe ha estado muy emocionado publicando posts
+sobre Castañeda. Y por qué no saca posts sobre otros alcaldes? como Villarán?
+    Frejolito? Del Castillo? Bedoya? deben ser anti-castañeda.
+
+![](images/2015-04-11_utero.png)
+
+### Municipalidad de Lima
+Los tuits analizados de la Municipalidad de Lima son los de la actual gestión.
+Se nota que tuitean bastante sobre Lima, obvio, pero además ha tuiteado con
+frecuencia sobre Chosica, muy poco sobre el transporte, y parece que animan a
+la gente a participar de algunas de sus actividades. Bueno fuera que animaran a
+participar durante las reuniones del consejo.
+Pero no tenían que molestarse en enviarme saludos. Gracias!
+
+![](images/2015-04-11_munilima.png)
+
+## Bonus del bonus track
+El script en Python para hacer la nube de palabras es una variación del script
+publicado por el estudiante de PhD, y gurú del análisis de datos, Sebastian
+Raschka. Aquí su página web <http://sebastianraschka.com/>
+
+Este es el script con mis modificaciones:
+
+<script src="https://gist.github.com/aniversarioperu/b40ea2406759bdfdc643.js"></script>
