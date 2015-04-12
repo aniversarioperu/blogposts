@@ -224,6 +224,10 @@ reconocer haberse equivocado si fuera el caso.
 Pero uno no debe dejarse manipular por el oponente y aceptar falta cuando uno
 sabe que actuó de manera correcta.
 
+Al mismo tiempo pensaba: *y si de verdar me equivoqué, y el oponente me está
+dando una oportunidad para reconocer mi error? Pero yo creo que no me he
+equivocado. Ya que chu... defenderé mi trabajo!*.
+
 **11:45** Ya había pasado una hora de discusión con el oponente donde me
 esforzaba al máximo en defender mi elección de metodologías, uso de datos,
 discusión y conclusiones de cada capítulo de mi tesis.
@@ -255,7 +259,7 @@ clamar haber encontrado serias fallas en uno de los capítulos de la tesis. Yo
 esquivaba los ganchos y devolvía *jabs*.
 Hasta que finalmente me dice:
 
-> - Yo creo que tus datos son basura, tus análisis son basura. Tu crees que se
+> - Yo creo que tus datos son basura, tus análisis son basura. Tú crees que se
 debe tener esta clase de basura en una tesis doctoral?
 
 En retrospectiva, luego de tantos años transcurridos, ahora sé que ese jurado
@@ -263,8 +267,138 @@ me quería dar el golpe final. Él quería destruirme al hacerme creer que mi
 trabajo era basura. 
 Él estaba esperando que defienda me trabajo con fundamentos y trate de
 demostrar que mi trabajo no era basura.
+Se supone que solo debía demorarse 5 minutos, pero este maldito, entre
+pregunta y repreguntas me había hecho corretear por un total de 45 minutos. Yo
+sentí que solo habrían pasado 15 minutos, pero mi coasesor mi diría que él
+estuvo tomando el tiempo y fueron 45.
+Creo que este jurado quería hacerme experimentar lo que es una
+**defensa de tesis**.
 
-Quería hacerme experimentar lo que es una **defensa de tesis**.
+## Veredicto
+Terminada la defensa, el decano anunció que se reuniría con el oponente,
+miembros del jurado y asesor a puerta cerrada para deliberar si 
+aprobaban o desaprobaban mi tesis.
+
+Recogí la poca humanidad que me quedaba y me paré al costado de la puerta a
+despedir y agradecer a los asistentes y aceptar de manera stoica los pésames y
+palabras de conmiseración de mis amigos.
+
+Uno de los primeros en acercarse fue mi asesor de tesis que había bajado
+corriendo con los ojos abiertos como dos huevos fritos. No recuerdo qué dijo
+solo que me dio la mano y un abrazo.
+Mis amixeres decían cosas como "bien hecho!", "excelente". Sínica y Marica se
+quedaron a conversar un ratito y dijeron estar asombradas que no hubiera
+mostrado síntomas de nervios durante la defensa. Aparentemente no fue evidente
+que me estaba haciendo la pichi durante la defensa.
+
+La profa de mi facultad, suplente del jurado, que únicamente le conocía una
+cara más seria que la de Doña Clotilde, pasó con gran sonrisa en el rostro y
+solo repitió "muy bien, muy bien".
+
+Estaba desconcertado. Aparentemente había realizado una buena defensa y no
+me había dado cuenta. Sabía que había podido responder bien algunas preguntas
+pero en muchas me afirmaba en defender mi trabajo a pesar que el oponente me
+decía que la había embarrado.
+
+Luego de un rato, salió el decado y asesor de la cámara secreta. El jurado les
+había preguntado si realmente había sido yo quien hizo la chamba de la tesis.
+Querían averiguarse que yo había realizado los análisis de datos y escrito los
+manuscritos que terminaron en publicaciones y siendo capítulos de la tesis.
+
+En la cámara secreta seguía el oponente con el jurado. Luego de unos minutos
+salió el oponente. Se supone que el oponente tiene que manifestar al jurado su
+apreciación sobre la defensa. Las preguntas que hizo al tesista fueron
+respondidas adecuadamente? El tesista sabía lo que estaba hablando? Pudo
+defender su trabajo satisfactoriamente?
+En este caso el oponete tiene voz pero no tiene voto. Una vez que se quedan
+solos los 4 miembros del jurado hacen votación y por mayoría simple se llega al
+veredicto: tesis aprobada o desaprobada.
+
+Varias horas después, mientras tomaba unas chelas con uno de los miembros del
+jurado, me enteraría que habían decidido por unanimidad en aprobar mi tesis.
+
+## El almuerzo
+El jurado salió de la cámara secreta y se acercaron a felicitarme y a
+preguntarme por el almuerzo.
+La secretaria otra vez llegó corriendo con unos papeles para que todos firmemos
+y así comenzar el trámite de mi diploma de PhD.
+Mi coasesor anunció que ya no estaban esperando en el *faculty club* para
+almorzar y que nos apuremos porque ya estábamos tarde.
+
+En ese momento me enteré que la universidad tenía un *faculty club*. Resultó
+ser el comedor de uso exclusivo para el Rector y autoridades máximas de la
+universidad. Además lo usan para recibir a almorzar a invitados ilustres.
+Y se acostumbra que allí almuercen los que estén involucrados directamente en
+las defensas de tesis doctorales:
+- El decano, asesor, coasesor, oponente, miembros del jurado y el tesista.
+
+El *faculty club* resultó ser un lugar bien bonito, con enchapados de madera en
+las paredes, sillones y sillas de cuero. Era bien parecido al bar inglés del
+Country Club. Mi tío Yorch sabe.
+
+Y allí me encontraba yo, sentado en la misma mesa con el oponente, jurado,
+  asesores y decano, le iba a meter tenedor a una papa sancochada cuando 
+me di cuenta de la revelación:
+
+Estaba sentado en la misma mesa con puros PhDs, y ahora yo era PhD también, era
+uno de ellos, había ingresado al gremio.
+Esta parte fue la que más me gustó aquel día y es la experiencia que más me ha
+gustado de todo el doctorado. Ese almuerzo es un pequeño gesto
+pero muy significativo. Causa un sentimiento único.
+
+
+# El tonazo
+En esa universidad es costumbre que haya un fiestón el mismo día de la defensa
+de tesis. Todos están invitados siempre y cuando hagan efectiva su matrícula,
+25 euros por persona.
+Ese dinero sirve para costear una serie de gastos pero no cubre todo.
+
+Asi que ese día en la noche se armó la jarana. 
+Con varias semanas de anticipación había
+alquilado un pequeño local dentro de la universidad para hacer una fiesta.
+Había contactado a una empresa de catering para que nos traiga la cena.
+El local proporcionaba los vinos, cerverzas y gaseosas a consignación. 
+
+También es costumbre que tus compañeros del doctorado de ayuden bastante y se
+repartan las tareas. Algunos se encargaron de la decoración. Sínica y Marica
+compraron un mantel de 50 euros para la larga mesa donde íbamos a cenar.
+Pusieron velas espaciadas homogéneamente, servilletas de colores, copas, vasos,
+cubiertos y platos.
+
+Otros amixeres se encargaron de recibir a la empresa de catering y acomodar
+toda la comida en bandejas en algún lugar adecuado del local. Descorcharon los
+vinos y se aseguraron que las chelas estén bien al polo.
+
+La cena fue bonita con algunos discursos, chistes y brindis. Cuando ya todos
+habían terminado el postre y tomado sus cafés y/o whiskis o cognacs comenzó el
+tonazo.
+
+Mis amixeres se encargaron de desaparecer la larga mesa y hacer espacio para
+convertir el pequeño local en una pista de baile. Fueron a traer al DJ que
+estaba fumando su cigarrito en la esquina y prendieron las luces sicodélicas.
+
+Bailé un rato, conversé otro rato, cogí una chela y me senté en el sofá a ver
+cómo se divertían los asistentes.
+La cena había comenzado a las 6:00pm, ya eran casi la media noche y varios
+estabamos cansados.
+Solo quedaban en el centro de la pista de baile un grupito de chicas del
+doctorado bailando entre ellas. 
+En eso veo que en simultáneo se sacan los zapatos con tacones, los
+huaraquean en el aire mientras dan un grito de guerra y los tiran a un
+rincón.
+Ahora ya estaban listas para bailar un par de horas más.
+
+Y allí estaba yo tomando mi chela, disfrutando ese líquido amargo mientras
+caía en cuenta de lo que había hecho. Había logrado el objetivo que escribí en
+esa combi en algún lugar del centro de Lima catorce años atrás.
+Cada paso, cada movimiento que había hecho desde que estaba en la academia
+preuniversitaria estaban pensados para llegar a ese momento.  
+Había llegado a la meta que me demoró 14 años en alcanzar.
+
+Y allí estaba yo, con la más mínima idea de qué hacer a continuación.
+
+
+Fin.
 
 
 
