@@ -58,12 +58,12 @@ dólares hasta lo máximo que tu tarjeta pueda disponer.
 Cada 50 dólares donados se usará para pagarle una hora de trabajo al
 programador designado.
 
-![50$ la hora](images/2015-04-18_django_1_hora.png)
+![50$ la hora](images/2015-04-19_django_1_hora.png)
 
 Si quieres costear a un programador para que trabaje durante una semana a
 tiempo completo puedes donar 2,800 dólares.
 
-![2,800$ a la semana](images/2015-04-18_django_1_semana.png)
+![2,800$ a la semana](images/2015-04-19_django_1_semana.png)
 
 Ya que Django ha sido, y será, importante para desarollo de aplicativos web en
 el útero.pe, hemos tratado de devolver algo al proyecto en agradecimiento, 
@@ -74,7 +74,7 @@ La gente de Django tuvo la amabilidad de poner el logo uterino en su página de
 donantes
 <https://www.djangoproject.com/fundraising/>.
 
-![Allí estamos](images/2015-04-18_django_donantes.png)
+![Allí estamos](images/2015-04-19_django_donantes.png)
 
 # Tanto ganan los programadores? 50$ por hora?
 Yo también me he quedado cojudo. Tanto ganan?
