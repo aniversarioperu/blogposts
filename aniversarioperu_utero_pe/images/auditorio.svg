@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="auditorio.svg">
   <defs
      id="defs4">
     <marker
@@ -121,11 +121,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <image
-       y="437.29074"
-       x="-77.14286"
-       id="image3063"
-       xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+    <g
+       id="g4910">
+      <image
+         width="800"
+         height="573"
+         xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
 MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAI9AyADASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
@@ -2442,132 +2443,134 @@ iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
 KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
 oAKKKKACiiigAooooA//2Q==
 "
-       height="573"
-       width="800" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1"
-       id="rect3066"
-       width="286.88333"
-       height="69.700523"
-       x="171.72594"
-       y="959.42816" />
-    <rect
-       style="fill:#792424;fill-opacity:1"
-       id="rect3836"
-       width="27.142857"
-       height="78.571426"
-       x="298.57141"
-       y="860.93365" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#ff0000;fill-opacity:1"
-       id="path3838"
-       sodipodi:cx="-245"
-       sodipodi:cy="404.50504"
-       sodipodi:rx="16.428572"
-       sodipodi:ry="16.428572"
-       d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z"
-       transform="translate(598.57143,475.71429)" />
-    <path
-       transform="translate(516.42857,519.28572)"
-       sodipodi:type="arc"
-       style="fill:#03ff00;fill-opacity:1"
-       id="path3838-7"
-       sodipodi:cx="-245"
-       sodipodi:cy="404.50504"
-       sodipodi:rx="16.428572"
-       sodipodi:ry="16.428572"
-       d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z" />
-    <path
-       transform="translate(755,107.85715)"
-       sodipodi:type="arc"
-       style="fill:#0039ff;fill-opacity:1"
-       id="path3838-7-3"
-       sodipodi:cx="-245"
-       sodipodi:cy="404.50504"
-       sodipodi:rx="16.428572"
-       sodipodi:ry="16.428572"
-       d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z" />
-    <path
-       style="fill:#ffda00;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 325.81404,764.08091 2.46225,-7.57614 0.29514,-1.28544 c 11.07144,-23.9153 135.62138,2.35001 122.85714,35.71427 l 0,-0.0893 -3.57143,12.85714 -1.17269,2.56887 c 12.76424,-33.36426 -111.7857,-59.62957 -122.85714,-35.71427 z"
-       id="path3900"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccc" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0df105;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-127.14285"
-       y="1030.9336"
-       id="text3902"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3904"
-         x="-127.14285"
-         y="1030.9336">AniversarioPeru</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m 190,1019.5051 68.57143,-77.14291"
-       id="path3906"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f10511;fill-opacity:1;stroke:none;font-family:Sans"
-       x="391.20535"
-       y="1012.9885"
-       id="text3902-0"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3904-9"
-         x="391.20535"
-         y="1012.9885">Oponente</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="m 398.57143,979.50511 -30,-78.57157"
-       id="path3906-5"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6dc34;fill-opacity:1;stroke:none;font-family:Sans"
-       x="755.71429"
-       y="788.07648"
-       id="text4765"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4767"
-         x="755.71429"
-         y="788.07648">Otros miembros</tspan><tspan
-         sodipodi:role="line"
-         x="755.71429"
-         y="838.07648"
-         id="tspan4769">del jurado</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="M 756.42857,793.07659 447.85714,783.07639"
-       id="path3906-5-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3439e6;fill-opacity:1;stroke:none;font-family:Sans"
-       x="342.31027"
-       y="304.11163"
-       id="text4765-9"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="342.31027"
-         y="304.11163"
-         id="tspan4769-7">Asesor de tesis de</tspan><tspan
-         sodipodi:role="line"
-         x="342.31027"
-         y="354.11163"
-         id="tspan4821">AniversarioPeru</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)"
-       d="M 493.57143,364.50511 505,491.64783"
-       id="path3906-5-0"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+         id="image3063"
+         x="195.59833"
+         y="443.35165" />
+      <rect
+         y="965.48907"
+         x="444.46713"
+         height="69.700523"
+         width="286.88333"
+         id="rect3066"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         y="866.99457"
+         x="571.31262"
+         height="78.571426"
+         width="27.142857"
+         id="rect3836"
+         style="fill:#792424;fill-opacity:1" />
+      <path
+         transform="translate(871.31262,481.77521)"
+         d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z"
+         sodipodi:ry="16.428572"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="404.50504"
+         sodipodi:cx="-245"
+         id="path3838"
+         style="fill:#ff0000;fill-opacity:1"
+         sodipodi:type="arc" />
+      <path
+         d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z"
+         sodipodi:ry="16.428572"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="404.50504"
+         sodipodi:cx="-245"
+         id="path3838-7"
+         style="fill:#03ff00;fill-opacity:1"
+         sodipodi:type="arc"
+         transform="translate(789.16976,525.34664)" />
+      <path
+         d="m -228.57143,404.50504 a 16.428572,16.428572 0 1 1 -32.85714,0 16.428572,16.428572 0 1 1 32.85714,0 z"
+         sodipodi:ry="16.428572"
+         sodipodi:rx="16.428572"
+         sodipodi:cy="404.50504"
+         sodipodi:cx="-245"
+         id="path3838-7-3"
+         style="fill:#0039ff;fill-opacity:1"
+         sodipodi:type="arc"
+         transform="translate(1027.7412,113.91807)" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path3900"
+         d="m 598.55523,770.14183 2.46225,-7.57614 0.29514,-1.28544 c 11.07144,-23.9153 135.62138,2.35001 122.85714,35.71427 l 0,-0.0893 -3.57143,12.85714 -1.17269,2.56887 C 732.18988,778.96697 607.63994,752.70166 596.5685,776.61696 z"
+         style="fill:#ffda00;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3902"
+         y="1036.9945"
+         x="145.59834"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0df105;fill-opacity:1;stroke:#087c00;font-family:Sans;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="1036.9945"
+           x="145.59834"
+           id="tspan3904"
+           sodipodi:role="line">AniversarioPeru</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path3906"
+         d="m 462.74119,1025.566 68.57143,-77.14289"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3902-0"
+         y="1019.0494"
+         x="663.94653"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f10511;fill-opacity:1;stroke:#8c250e;font-family:Sans;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="1019.0494"
+           x="663.94653"
+           id="tspan3904-9"
+           sodipodi:role="line">Oponente</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3906-5"
+         d="m 671.31262,985.56603 -30,-78.57157"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4765"
+         y="794.13739"
+         x="1028.4554"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e6dc34;fill-opacity:1;stroke:#a0951b;font-family:Sans;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="794.13739"
+           x="1028.4554"
+           id="tspan4767"
+           sodipodi:role="line">Otros miembros</tspan><tspan
+           id="tspan4769"
+           y="844.13739"
+           x="1028.4554"
+           sodipodi:role="line">del jurado</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3906-5-6"
+         d="M 1029.1698,799.13751 720.59833,789.13731"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4765-9"
+         y="310.17255"
+         x="615.05145"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3439e6;fill-opacity:1;stroke:#243a96;font-family:Sans;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan4769-7"
+           y="310.17255"
+           x="615.05145"
+           sodipodi:role="line">Asesor de tesis de</tspan><tspan
+           id="tspan4821"
+           y="360.17255"
+           x="615.05145"
+           sodipodi:role="line">AniversarioPeru</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3906-5-0"
+         d="m 766.31262,370.56603 11.42857,127.14272"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Lend)" />
+    </g>
   </g>
 </svg>
