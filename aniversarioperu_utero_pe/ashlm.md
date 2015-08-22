@@ -79,7 +79,8 @@ Solo basta correrlo con el comando:
 
 ## Casos preocupantes
 Entre estos correos peruanos (confirmaods) 
-hay 7 que son del dominio **.GOB.PE**. Quiere empleados públicos usaron cuentas
+hay 7 que son del dominio **.GOB.PE**. Esto significa que empleados públicos
+usaron cuentas
 que les dio el Estado para entrar a este sitio web de trampeo.
 
 ![](images/2015-08-22_ashley_maddison_04.png)
