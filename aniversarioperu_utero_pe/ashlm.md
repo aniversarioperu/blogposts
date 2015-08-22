@@ -79,8 +79,15 @@ Solo basta correrlo con el comando:
 
 ## Casos preocupantes
 Entre estos correos peruanos (confirmaods) 
-hay 8 que son del dominio **.GOB.PE**. Quiere empleados públicos usaron cuentas
+hay 7 que son del dominio **.GOB.PE**. Quiere empleados públicos usaron cuentas
 que les dio el Estado para entrar a este sitio web de trampeo.
+
+![](images/2015-08-22_ashley_maddison_04.png)
+
+Hay 3 emails que son del dominio **.MIL.PE**. Esos son emails de militares?
+Ya peeeee.
+
+![](images/2015-08-22_ashley_maddison_05.png)
 
 Esto no es mal uso de recursos del Estado? Se supone que para estas cosas
 privadas deben usar su correo personal en Gmail u otro no?
