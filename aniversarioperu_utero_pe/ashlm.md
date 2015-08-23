@@ -1,10 +1,19 @@
 # El leak de Ashley Madison
 Los hackers responsables de robarse toda la lista de usuarios de la Web para
 aventuras amorosas han publicado casi 10 gigabytes de información en un
-torrent que se puede encontrar en [PirateBay](https://thepiratebay.mn/torrent/12237184/The_Complete_Ashley_Madison_Dump_from_the_Impact_Team).
+torrent.
 
-![](images/2015-08-25_tpb1.png)
+Periodistas de la agencia Associated Press decidieron descargarse todos los
+datos y emprender una [investigación periodística que puedes leer aquí](http://bigstory.ap.org/article/065953e72e9649e0bc6efb69b06295ed/evidence-infidelities-spreads-online-wake-hack) 
 
+Uno de los principales hallazgos de estos reporteros fue el haber encontrado 
+que **congresistas y cientos de empleados públicos de EEUU** son clientes 
+de esta web de tramposos del amor.
+Según Associated Press, el problema es que estos empleados estatales
+**usaron computadoras y la conexiones de internet de sus oficinas estatales** y
+federales para acceder a sus cuentas de Ashley Madison.
+
+# Se puede hacer esta averiguación para el Perú?
 Hace unos días me fijé y habían 6 mil personas compartiendo los archivos
 (*seeders*) y más de 5 mil personas descargándolos (*leechers*).
 
@@ -27,8 +36,6 @@ Luego de esperar un largo rato tendrás todo listo para hacer búsquedas de
 emails. Me busqué usando el comando ``select`` pero no me encontré:
 
 ![](images/2015-08-22_ashley_maddison_02.png)
-
-Me puse a buscar el email de mi vecino tramposín y oh! sorpresa allí estaba.
 
 Por curiosidad busqué cuantos correos válidos de dominio **.PE** existen en el
 leak. Hay 908 email confirmados.
@@ -78,7 +85,7 @@ Solo basta correrlo con el comando:
 > python search_emails.py email_lista.txt
 
 ## Casos preocupantes
-Entre estos correos peruanos (confirmaods) 
+Entre estos correos peruanos (confirmados) 
 hay 7 que son del dominio **.GOB.PE**. Esto significa que empleados públicos
 usaron cuentas
 que les dio el Estado para entrar a este sitio web de trampeo.
@@ -98,7 +105,7 @@ Además de coordenadas geográficas. Los administradores de Ashley Madison
 guardaban las direcciones IP y ubicación geográfica desde el aparato que usaban
 sus usuarios para conectarse al servicio.
 
-Estos datos geográficos son los que permitieron a [Associate Press ubicar](http://bigstory.ap.org/article/065953e72e9649e0bc6efb69b06295ed/evidence-infidelities-spreads-online-wake-hack) 
+Estos datos geográficos son los que permitieron a [Associated Press ubicar](http://bigstory.ap.org/article/065953e72e9649e0bc6efb69b06295ed/evidence-infidelities-spreads-online-wake-hack) 
 congresistas y cientos de empleados públicos de EEUU que usaron computadoras
 estatales para acceder a sus cuentas de Ashley Madison.
 
@@ -125,28 +132,25 @@ esto es bien caro. Tienes que tener:
 * copias de seguridad
 * software especializado front-end, back-end
 * balance loaders para distribuir la carga entre varios servidores
-* software bayesiando anti-spam
+* software bayesiano anti-spam
 * personal técnico que dé mantenimiento y maneje todo este sistema.
 
-lo más dificil debe ser manejar el software para el servicio de email. No es
-cuestion de instalar un programa y ya. Hay que instalar, configurar y mantener
-numerosos softwares que deben funcionar en una delicada sincronización.
+lo más difícil debe ser manejar el software para el servicio de email. No es
+cuestión de instalar un programa y ya. Hay que instalar, configurar y mantener
+numerosos software que deben funcionar en una delicada sincronización.
 
 Además los ingenieros de sistemas que manejan estos servidores en el Estado
 ganan entre 7mil y 10mil soles al mes. No cobran con canje.
 http://www.devida.gob.pe/wp-content/uploads/2015/07/Convocatoria-CAS-N-181-Bases-de-Perfil.pdf
 Me parece bien que tengan buen sueldo. Pero el gasto en personal que mantenga
-los sistemas informaticos no es un ripio.
+los sistemas informáticos no es un ripio.
 
 Es posible además que todo este hardware + software + entrenamiento haya sido
 vendido como un paquete completo al Estado por parte de IBM, o Microsoft.
-Como tú comprenderás, ellos no cobran barato. Por ejemplo, según el protal de
+Como tú comprenderás, ellos no cobran barato. Por ejemplo, según el portal de
 Transparencia del Ministerio de Economía, el Estado peruano le paga cada año a
 IBM entre 4 y 64 millones de soles por hardware y software. Claro que no todo
 se gasta en mantener el sistema de emails, pero al menos una parte de tantos
 millones debe servir para eso.
 
 ![](images/2015-08-20_ibm.png)
-
-
-
